@@ -1,0 +1,5116 @@
+/* Google Fonts */
+/* Primary font: Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: #fdc533;
+  --heading-color: #0B2038;
+  --text-color: #454545;
+  --white-color: #fff;
+  --gray-color: #454545;
+  --primary-lite-01: #fff9e9;
+  --primary-lite-02: #ffe9d3;
+  --black-color: #000000;
+  --secondary-color: #0e1422;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black-color);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+  color: var(--primary-color);
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+button[type=submit]:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+a:focus {
+  outline-width: 1px;
+  outline-offset: -3px;
+  outline-style: dotted;
+  text-decoration: none;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast_social {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.ast_social .ast_social_icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+  text-align: center;
+  color: var(--white-color);
+  font-size: 14px;
+  border: 1px solid var(--white-color);
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast_social .ast_social_icon i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.ast_social .ast_social_icon:hover,
+.ast_social .ast_social_icon:focus {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-color: var(--primary-color);
+}
+
+.ast_social .ast_social_icon:hover i,
+.ast_social .ast_social_icon:focus i {
+  -webkit-animation: toBottomFromTop 0.5s forwards;
+  animation: toBottomFromTop 0.5s forwards;
+}
+
+/*Preloader Css*/
+.Preloader {
+  display: none !important;
+}
+
+.loader-body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.ast-circle {
+  margin: 100px auto;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.ast-circle .ast-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ast-circle .ast-circle2 {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.ast-circle .ast-circle3 {
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.ast-circle .ast-circle4 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.ast-circle .ast-circle5 {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+.ast-circle .ast-circle6 {
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.ast-circle .ast-circle7 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.ast-circle .ast-circle8 {
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+
+.ast-circle .ast-circle9 {
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+.ast-circle .ast-circle10 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.ast-circle .ast-circle11 {
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+.ast-circle .ast-circle12 {
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+
+.ast-circle .ast-child:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 8%;
+  height: 30%;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  -webkit-animation: ast-circleBounceDelay 1.2s infinite ease-in-out both;
+  animation: ast-circleBounceDelay 1.2s infinite ease-in-out both;
+}
+
+.ast-circle .ast-circle2:before {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.ast-circle .ast-circle3:before {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.ast-circle .ast-circle4:before {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.ast-circle .ast-circle5:before {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+.ast-circle .ast-circle6:before {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+
+.ast-circle .ast-circle7:before {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+.ast-circle .ast-circle8:before {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.ast-circle .ast-circle9:before {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+
+.ast-circle .ast-circle10:before {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.ast-circle .ast-circle11:before {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+
+.ast-circle .ast-circle11:before {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+
+@keyframes ast-circleBounceDelay {
+
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* --- Selection Colors --- */
+
+::-webkit-selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.ast_page-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1400px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1240px;
+  }
+}
+
+.ast_section {
+  position: relative;
+  padding: 80px 0;
+}
+
+.ast_section_pt-0 {
+  padding-top: 0px;
+}
+
+.ast_section_pb-0 {
+  padding-bottom: 0px;
+}
+
+.ast_bg_primary_lite {
+  background-color: var(--primary-lite-01);
+}
+
+.astro_theme_titles {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.astro_theme_titles .theme_title {
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  color: var(--heading-color);
+  background-color: var(--primary-lite-02);
+}
+
+.astro_theme_titles h5 img {
+  width: 100%;
+  max-width: 30px;
+  margin-right: 10px;
+}
+
+.astro_theme_titles .theme_subtitle {
+  font-weight: 800;
+  color: var(--heading-color);
+  font-family: 'Philosopher', sans-serif;
+  line-height: 1.2;
+  font-size: 42px;
+  text-transform: capitalize;
+}
+
+.astro_btn {
+  position: relative;
+  border: none;
+  display: inline-block;
+  color: var(--heading-color);
+  padding: 18px 25px;
+  letter-spacing: 0.3px;
+  overflow: hidden;
+  background: var(--primary-color);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 0;
+  line-height: 20px;
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+
+.astro_btn::before,
+.astro_btn::after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  z-index: -1;
+  background-color: var(--heading-color);
+  border-radius: 50%;
+}
+
+.astro_btn::before {
+  left: -20px;
+  transform: translate(-50%, -50%);
+}
+
+.astro_btn::after {
+  right: -20px;
+  transform: translate(50%, -50%);
+}
+
+.astro_btn:hover::before,
+.astro_btn:focus::before {
+  animation: criss-cross-left 0.8s both;
+  animation-direction: alternate;
+}
+
+.astro_btn:hover:after,
+.astro_btn:focus:after {
+  animation: criss-cross-right 0.8s both;
+  animation-direction: alternate;
+}
+
+.astro_btn:hover,
+.astro_btn:focus {
+  color: var(--white-color);
+}
+
+.astro_btn span,
+.astro_btn i {
+  position: relative;
+  z-index: 2;
+}
+
+.astro_btn span {
+  position: relative;
+  color: inherit;
+  z-index: 2;
+  top: 1px;
+}
+
+/* -------- Start:- Header wrapper   ------------*/
+.ast_header_wrapper {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+}
+
+.header-01 .ast_header_wrapper {
+  background-color: var(--white-color);
+}
+
+.ast_header_wrapper.is-sticky-menu {
+  position: fixed;
+  top: 0;
+  margin: auto;
+  z-index: 99;
+  background-color: var(--white-color);
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-animation: 0.8s ease-in-out fadeInDown;
+  animation: 0.8s ease-in-out fadeInDown;
+}
+
+.ast_info_bar {
+  position: relative;
+  padding: 10px 15px;
+  z-index: 99;
+  background-color: var(--primary-lite-01);
+}
+
+.ast_info_bar .ast_inner_info.ast_column_left {
+  text-align: left;
+}
+
+.ast_info_bar .ast_inner_info.ast_column_right {
+  text-align: right;
+}
+
+.ast_info_bar .ast_inner_info span {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.ast_info_bar .ast_inner_info span+span {
+  margin-left: 10px;
+}
+
+.ast_info_bar .ast_inner_info span i {
+  color: var(--primary-color);
+  margin-right: 5px;
+}
+
+.ast_logo {
+  height: 100%;
+}
+
+.ast_logo h4.site-title {
+  color: var(--black-color);
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+
+.ast_logo p.site-description {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.ast_logo img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.logo a:focus {
+  outline-width: 1px;
+  outline-style: dotted;
+}
+
+.ast_header_wrapper .ast_navbar_wraper {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ast_header_wrapper .main-menu>ul>li {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.ast_header_wrapper .main-menu ul li>a {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--black-color);
+  text-transform: capitalize;
+  padding: 25px 0px;
+  line-height: 24px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast_header_wrapper .main-menu ul li>a:hover,
+.ast_header_wrapper .main-menu ul li>a:focus {
+  color: var(--primary-color);
+}
+
+.ast_header_wrapper .ast_book_btn {
+  padding: 18px 12px;
+  position: relative;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.ast_header_wrapper .nav-menu.show {
+  right: 0;
+}
+
+.ast_header_wrapper .navbar-close {
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  z-index: 12;
+  width: 40px;
+  height: 38px;
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  text-align: center;
+  line-height: 38px;
+  display: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.ast_header_wrapper .navbar-close:hover,
+.ast_header_wrapper .navbar-close:focus {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.body-overlay {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  right: 0;
+  opacity: 0;
+  background-color: rgb(0 0 0 / 60%);
+  visibility: hidden;
+  transition: all 800ms ease;
+  -webkit-transition: all 800ms ease;
+}
+
+.ast_header_wrapper .main-menu ul li .dropdown-menu li {
+  display: block;
+  margin: 0;
+  border-bottom: 1px solid var(--primary-lite-01);
+}
+
+.ast_header_wrapper .main-menu ul li .dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.ast_header_wrapper .main-menu ul li .dropdown-menu li a {
+  display: block;
+  font-size: 15px;
+  padding: 7px 15px;
+  position: relative;
+  border-radius: 0;
+  line-height: 2;
+  margin: 0;
+  color: var(--heading-color);
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.ast_header_wrapper .main-menu ul li .dropdown-menu li:last-child>a {
+  border-bottom: none;
+}
+
+.ast_header_wrapper .main-menu ul li:hover>.dropdown-menu,
+.ast_header_wrapper .main-menu ul li:focus-within>.dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+}
+
+.ast_header_wrapper .navbar-toggler {
+  display: none;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.ast_header_wrapper .nav-menu .main-menu ul li .mobile-collapsed button {
+  position: absolute;
+  right: 25px;
+  width: 28px;
+  height: 28px;
+  top: 10px;
+  z-index: 2;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-size: 15px;
+}
+
+.ast_header_wrapper .nav-menu .main-menu ul li .mobile-collapsed button:hover,
+.ast_header_wrapper .nav-menu .main-menu ul li .mobile-collapsed button:focus {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-color: var(--secondary-color);
+}
+
+.ast_header_wrapper .ast_primary-menu .navbar-toggler {
+  z-index: 1;
+  text-align: center;
+  font-size: 20px;
+  width: 40px;
+  height: 38px;
+  line-height: 38px;
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 0px;
+  transition: all 0.6s;
+}
+
+.ast_header_wrapper .main-menu .dropdown-menu li a:hover,
+.ast_header_wrapper .main-menu .dropdown-menu li a:focus,
+.ast_header_wrapper .main-menu .dropdown-menu li.active a {
+  padding-left: 25px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.ast_header_wrapper .nav-menu .main-menu ul li:hover .toggle-menu {
+  color: var(--primary-color);
+}
+
+.ast_header_wrapper .ast_primary-menu .navbar-toggler:hover,
+.ast_header_wrapper .ast_primary-menu .navbar-toggler:focus {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.ast_header_wrapper .astro_header-image {
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  z-index: 0;
+}
+
+.ast_header_wrapper:has(.show),
+.ast_header_wrapper.is-sticky-menu:has(.show) {
+  z-index: 99999;
+}
+
+/* -------- End:- Header wrapper   ------------*/
+
+/* -------- Start:-Slider Section   ------------*/
+.ast_slider_section {
+  position: relative;
+}
+
+.astro-main-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.astro-main-slider01:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 730px;
+  height: 730px;
+  transform: translate(-50%, -50%);
+  background-image: url(../images/general/zodiac-wheel.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -webkit-animation: animNameTwo 15s linear infinite;
+  animation: animNameTwo 15s linear infinite;
+}
+
+.main-table {
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.main-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.astro-main-slider div.main-content {
+  position: relative;
+  max-width: 40rem;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+.main-content .ast_sub_title {
+  position: relative;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: var(--white-color);
+  background: #ffffff36;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 6px 32px 6px 6px;
+  margin-bottom: 20px;
+}
+
+.main-content .ast_sub_title .ast_slider_earth {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 14px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+.main-content .ast_sub_title .ast_slider_earth i {
+  color: var(--primary-color);
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.main-content .ast_title {
+  font-size: 78px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.main-content .ast_description {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.main-content .ast_slider_btn {
+  margin-top: 35px;
+}
+
+.ast_home_slider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.ast_home_slider .owl-item.active .main-content .ast_sub_title {
+  animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.ast_home_slider .owl-item.active .main-content .ast_title {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.ast_home_slider .owl-item.active .main-content .ast_description {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.ast_home_slider .owl-item.active .main-content .astro_btn {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.astro_pandit img {
+  -webkit-animation: jumpping 8s infinite linear;
+  animation: jumpping 8s infinite linear;
+}
+
+.ast_home_slider.owl-theme .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0px;
+  line-height: 50px;
+  text-align: center;
+  transform: translate(0, -50%);
+  border: 0.12rem solid var(--white-color);
+  background: transparent;
+  color: var(--heading-color);
+  background: var(--white-color);
+  transition: all 0.65s;
+  transition: all 0.65s;
+}
+
+.ast_home_slider.owl-theme .owl-nav button.owl-prev {
+  left: 10px;
+}
+
+.ast_home_slider.owl-theme .owl-nav button.owl-next {
+  right: 10px;
+}
+
+.ast_home_slider .owl-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+}
+
+.ast_home_slider .owl-dots .owl-dot {
+  background: transparent;
+}
+
+.ast_home_slider.owl-theme .owl-dots .owl-dot {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  border-radius: 100%;
+  background: transparent;
+  border: .17rem solid transparent;
+  position: relative;
+  transition: var(--transition);
+}
+
+.ast_home_slider.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  margin: 0;
+  background: #fff;
+  display: block;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+}
+
+@media (max-width: 991px) {
+  .ast_home_slider .item {
+    height: 60vh !important;
+    /* Set a specific height for mobile */
+    min-height: 450px !important;
+  }
+
+  .ast_home_slider .item img {
+    height: 100% !important;
+    object-fit: cover !important;
+    /* Forces image to fill area without distortion */
+    object-position: center !important;
+  }
+
+  .astro-main-slider {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .main-content {
+    padding: 0 15px !important;
+  }
+
+  .ast_title {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+  }
+}
+
+.ast_home_slider.owl-theme:not(.home-slider) .owl-nav [class*=owl-]:hover,
+.ast_home_slider.owl-theme:not(.home-slider) .owl-nav [class*=owl-]:focus {
+  background: var(--black-color);
+  border-color: var(--black-color);
+  color: var(--white-color);
+}
+
+/* -------- End:-Slider Section   ------------*/
+
+
+/* -------- Start:Form Section   ------------*/
+.ast_contact-form-section {
+  position: relative;
+  background-color: #fff3d6;
+}
+
+.astro__sadesati-section .heading_title,
+.astro__panchang-section .heading_title {
+  padding-bottom: 0px;
+}
+
+.astro__sadesati-section .multi_lang,
+.astro__panchang-section .multi_lang,
+.astro__sadesati-section .heading_title h2 span a,
+.astro__panchang-section .heading_title h2 span a {
+  display: none;
+}
+
+.astro__sadesati-section .heading_title h2,
+.astro__panchang-section .heading_title h2 {
+  font-size: 28px !important;
+  color: var(--heading-color);
+}
+
+.ast_search_box,
+.astro__sadesati-section section.choose_services,
+.astro__panchang-section section.panchang_sec {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 50px 50px;
+  margin-top: -160px;
+  border-radius: 15px;
+  z-index: 1;
+  position: relative;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.astro__sadesati-section section.choose_services,
+.astro__panchang-section section.panchang_sec {
+  padding: 30px 50px;
+  margin-top: 0px;
+}
+
+.ast_form_box .form-group label {
+  font-size: 18px;
+  color: var(--heading-color);
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ast_form_box .form-group .ast_form_field {
+  padding: 18px 20px;
+  border: 1px solid var(--primary-lite-01);
+  background-color: var(--primary-lite-01);
+  border-radius: 10px;
+  box-shadow: none;
+  margin-bottom: 20px;
+  color: #454545;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast_form_call {
+  position: relative;
+}
+
+.ast_form_call .astro_btn {
+  position: absolute;
+  left: 12px;
+  bottom: 20px;
+  padding: 20px 32px;
+}
+
+.ast_form_box .form-group .ast_form_field:hover,
+.ast_form_box .form-group .ast_form_field:focus {
+  background-color: var(--white-color);
+  border-color: var(--primary-color);
+}
+
+.ast_radio_btn_list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ast_radio_btn_list li {
+  padding: 15px 24px;
+  position: relative;
+  background-color: #ffefd4;
+  border-radius: 10px;
+  margin: 0 20px 20px 0;
+  color: var(--text-color);
+}
+
+.ast_radio_btn_list li:last-child {
+  margin-right: 0px;
+}
+
+.ast_radio_btn_list li input.form-check-input {
+  width: 12px;
+  height: 12px;
+  border-color: var(--text-color);
+  vertical-align: middle;
+  margin-top: 0;
+  background-color: var(--primary-lite-01);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast_radio_btn_list li label {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-left: 5px;
+  color: var(--text-color);
+}
+
+.ast_radio_btn_list li input.form-check-input:focus,
+.ast_radio_btn_list li input.form-check-input:checked[type=radio] {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: none;
+  border-color: var(--white-color);
+}
+
+.ast_form_box-white .form-group .ast_form_field {
+  padding: 16px 20px;
+  border: none;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: none;
+  height: 60px;
+  font-size: 14px;
+  color: #454545;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast_form_box-radius-0 .form-group .ast_form_field {
+  padding: 18px 20px;
+  background-color: var(--white-color);
+  border-radius: 0px;
+}
+
+.ast_astro-slider-form {
+  position: relative;
+  z-index: 9;
+}
+
+.ast_astro-slider-form:has(.ast__popup-show) {
+  z-index: 999;
+}
+
+.ast_astro-slider-form .kundli_sec {
+  position: unset !important;
+  padding: 0px !important;
+}
+
+.ast_astro-slider-form .kundli_vedic_form .kundli_vedic_login_form {
+  --bs-gutter-x: 1rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+  position: relative;
+  grid-column-gap: 10px;
+  margin-top: calc(var(--bs-gutter-y)* -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+}
+
+.ast_astro-slider-form #form-kundali .kundli_vedic_login_form .kundli_vedic_login_form {
+  --bs-gutter-x: 1rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+  position: relative;
+  grid-column-gap: 10px;
+  margin-top: calc(var(--bs-gutter-y)* -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.ast_astro-slider-form .kundli_vedic_form .kundli_vedic_login_form>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+.ast_astro-slider-form #form-kundali .kundli_vedic_login_form .kundli_vedic_login_form>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+.ast_astro-slider-form .choose_services_box,
+.astro__sadesati-section .astro_container .choose_services_box {
+  background: var(--white-color) !important;
+  border-radius: 0px !important;
+  padding: 0px !important;
+  border: none !important;
+}
+
+.ast_astro-slider-form .choose_services_box .astro_box .heading_title {
+  display: none;
+}
+
+.astro__sadesati-section #panchang_sec_data .kundli_vedic_group,
+.astro__panchang-section #sade-sati-kundli .kundli_vedic_group {
+  margin-top: 0px !important;
+}
+
+.ast_astro-slider-form .kundli_vedic_login_form,
+.astro__sadesati-section #sade-sati-kundli .kundli_vedic_login_form {
+  padding: 0px !important;
+}
+
+.ast_astro-slider-form .choose_services_box .astro_box_row .astro_grid .kundli_vedic,
+.astro__panchang-section .choose_services_box .astro_box_row .astro_grid .kundli_vedic,
+.astro__sadesati-section .choose_services_box .astro_box_row .astro_grid .kundli_vedic {
+  background: var(--white-color) !important;
+  border-radius: 0px !important;
+  padding: 0px !important;
+  border: none !important;
+}
+
+.astro__panchang-section .astro_container .choose_services_box,
+.astro__panchang-section .kundli_vedic_login_form {
+  border: none;
+  padding: 0px !important;
+}
+
+.ast_astro-slider-form .ast_form_box .kundli_vedic_login_form .kundli_vedic_group {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+
+.ast_astro-slider-form #panchang-monthly #form-panchang-monthly .kundli_vedic_login_form .astro_select,
+.ast_astro-slider-form #moon_calendar_data #form-panchang-moon .kundli_vedic_login_form .astro_select {
+  padding-top: 20px !important;
+}
+
+.ast_astro-slider-form #panchang-monthly #form-panchang-monthly .kundli_vedic_group,
+.ast_astro-slider-form #moon_calendar_data #form-panchang-moon .kundli_vedic_login_form .kundli_vedic_group {
+  padding-top: 0px !important;
+}
+
+.ast_astro-slider-form .ast_form_box .kundli_vedic_login_form .kundli_vedic_group input.check,
+.astro__sadesati-section .kundli_vedic_login_form .kundli_vedic_group input.check,
+.astro__panchang-section .kundli_vedic_login_form .kundli_vedic_group input.check,
+.ast_astro-slider-form #panchang-monthly #form-panchang-monthly .custom-select select,
+.ast_astro-slider-form #panchang-monthly #form-panchang-monthly .kundli_vedic_login_form .kundli_vedic_group input.clr-black,
+.ast_astro-slider-form #moon_calendar_data #form-panchang-moon .custom-select select,
+.ast_astro-slider-form #moon_calendar_data #form-panchang-moon .kundli_vedic_login_form .kundli_vedic_group input.clr-black {
+  padding: 18px 20px;
+  border: 1px solid var(--primary-lite-01);
+  background-color: var(--primary-lite-01);
+  border-radius: 10px;
+  box-shadow: none;
+  margin-bottom: 20px;
+  color: #454545 !important;
+  height: auto !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast_astro-slider-form #panchang-monthly #form-panchang-monthly .custom-select,
+.ast_astro-slider-form #moon_calendar_data #form-panchang-moon .custom-select {
+  border: none !important;
+}
+
+.ast_astro-slider-form .ast_form_box .kundli_vedic_login_form .kundli_vedic_group input.check:hover,
+.ast_astro-slider-form .ast_form_box .kundli_vedic_login_form .kundli_vedic_group input.check:focus,
+.astro__sadesati-section .kundli_vedic_login_form .kundli_vedic_group input.check:hover,
+.astro__sadesati-section .kundli_vedic_login_form .kundli_vedic_group input.check:focus,
+.astro__panchang-section .kundli_vedic_login_form .kundli_vedic_group input.check:hover,
+.astro__panchang-section .kundli_vedic_login_form .kundli_vedic_group input.check:focus,
+.ast_astro-slider-form #panchang-monthly #form-panchang-monthly .kundli_vedic_login_form .kundli_vedic_group input.clr-black:hover,
+.ast_astro-slider-form #panchang-monthly #form-panchang-monthly .kundli_vedic_login_form .kundli_vedic_group input.clr-black:focus,
+.ast_astro-slider-form #moon_calendar_data #form-panchang-moon .kundli_vedic_login_form .kundli_vedic_group input.clr-black:hover,
+.ast_astro-slider-form #moon_calendar_data #form-panchang-moon .kundli_vedic_login_form .kundli_vedic_group input.clr-black:focus {
+  background-color: var(--white-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.ast_astro-slider-form .kundli_vedic_login_form .kundli_vedic_group input[type="submit"],
+.astro__sadesati-section .kundli_vedic_login_form .kundli_vedic_group input[type="submit"],
+.astro__panchang-section .kundli_vedic_login_form .kundli_vedic_group input[type="submit"] {
+  position: relative;
+  border: none !important;
+  height: auto;
+  display: inline-block;
+  color: var(--heading-color) !important;
+  padding: 18px 25px !important;
+  letter-spacing: 0.3px;
+  overflow: hidden;
+  background: var(--primary-color) !important;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 0;
+  line-height: 20px;
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+
+.astro__sadesati-section .kundli_vedic_login_form .kundli_vedic_group input[type="submit"],
+.astro__panchang-section .kundli_vedic_login_form .kundli_vedic_group input[type="submit"] {
+  margin: auto;
+}
+
+.ast_astro-slider-form .kundli_vedic_login_form .kundli_vedic_group input[type="submit"]:hover,
+.ast_astro-slider-form .kundli_vedic_login_form .kundli_vedic_group input[type="submit"]:focus,
+.astro__sadesati-section .kundli_vedic_login_form .kundli_vedic_group input[type="submit"]:hover,
+.astro__sadesati-section .kundli_vedic_login_form .kundli_vedic_group input[type="submit"]:focus,
+.astro__panchang-section .kundli_vedic_login_form .kundli_vedic_group input[type="submit"]:hover,
+.astro__panchang-section .kundli_vedic_login_form .kundli_vedic_group input[type="submit"]:focus {
+  color: var(--white-color) !important;
+  background: var(--heading-color) !important;
+}
+
+.ast_astro-slider-form .ast_form_box div#today_img_chart,
+.astro__sadesati-section div#today_img_chart,
+.ast_astro-slider-form .kundli_sec #kundli-lagan-chart {
+  text-align: center;
+  height: auto !important;
+}
+
+.ast_astro-slider-form .ast_form_box #today_img_chart svg {
+  transform: scale(0.8) translate(0px, 0px);
+}
+
+.ast_astro-slider-form #form-rudraksh .kundli_vedic_login_form {
+  display: flex;
+}
+
+.ast_astro-slider-form #gem-rudhraksh .kundli_vedic_group:last-child {
+  margin: inherit !important;
+}
+
+.ast_astro-slider-form #panchang_sec_data #form-panchang .kundli_vedic_login_form,
+.ast_astro-slider-form #panchang-monthly #form-panchang-monthly .kundli_vedic_login_form,
+.ast_astro-slider-form #service-retro #form-retro .kundli_vedic_login_form,
+.ast_astro-slider-form #numberology_sec_data #form-numberology .kundli_vedic_login_form,
+.ast_astro-slider-form #moon_calendar_data #form-panchang-moon .kundli_vedic_login_form {
+  display: flex !important;
+  gap: 10px;
+}
+
+.ast_astro-slider-form section#panchang_sec_data .kundli_vedic_login_form>.kundli_vedic_group:first-of-type {
+  width: 40% !important;
+  grid-template-columns: 50% calc(50% - 10px);
+}
+
+.ast_astro-slider-form section#sade-sati-kundli {
+  width: calc(100% - 0px) !important;
+}
+
+.ast_astro-slider-form #panchang_sec_data .kundli_vedic_group {
+  padding-top: 0px !important;
+}
+
+.ast_astro-slider-form #moon_calendar_data #form-panchang-moon .kundli_vedic_login_form>.kundli_vedic_group:last-child {
+  padding-top: 30px !important;
+}
+
+@media (min-width: 768px) {
+  .ast_astro-slider-form .kundli_vedic_login_form>* {
+    flex: 0 0 auto;
+    width: 32% !important;
+  }
+
+  .ast_astro-slider-form #form-kundali .kundli_vedic_login_form .kundli_vedic_login_form>* {
+    flex: 0 0 auto;
+    width: 32% !important;
+  }
+
+  .ast_astro-slider-form #form-hora .kundli_vedic_group:nth-child(3),
+  .ast_astro-slider-form #form-hora .kundli_vedic_group:nth-child(4) {
+    width: 32% !important;
+  }
+
+  .ast_astro-slider-form #form-choghadiya .kundli_vedic_login_form {
+    gap: 10px !important;
+  }
+
+  .ast_astro-slider-form #choghadiya-mahurat #form-choghadiya .kundli_vedic_group {
+    width: 32% !important;
+  }
+
+  .ast_astro-slider-form #form-sade-sati .choose_services_row,
+  .ast_astro-slider-form #gem-rudhraksh .kundli_key {
+    flex: 0 0 auto;
+    width: 64.67% !important;
+    gap: 10px;
+    grid-template-columns: 50% calc(50% - 10px) !important;
+  }
+
+  .ast_astro-slider-form #form-sade-sati .choose_services_row>* {
+    width: 50% !important;
+  }
+
+  .ast_astro-slider-form .kundli_vedic_login_form .kundli_vedic_login_form>.kundli_vedic_group:last-child {
+    position: absolute;
+    right: 250px;
+    top: 140px;
+  }
+
+  .ast_astro-slider-form #form-hora .kundli_vedic_login_form .kundli_vedic_login_form>.kundli_vedic_group:last-child,
+  .ast_astro-slider-form #choghadiya-mahurat #form-choghadiya .kundli_vedic_group:last-child {
+    position: relative;
+    right: unset;
+    top: unset;
+  }
+
+  .ast_astro-slider-form #numberology_sec_data #form-numberology .kundli_vedic_group:last-child {
+    position: relative;
+    right: unset;
+    top: 13px;
+  }
+
+  .ast_astro-slider-form section#panchang_sec_data .kundli_vedic_login_form>.kundli_vedic_group:first-of-type {
+    width: 65% !important;
+  }
+
+  .ast_astro-slider-form section#gem-rudhraksh,
+  .ast_astro-slider-form section#panchang-monthly {
+    padding: 0px !important;
+  }
+
+  .ast_astro-slider-form #service-retro #form-retro .kundli_vedic_login_form>.kundli_vedic_group:last-child {
+    padding-top: 55px !important;
+  }
+
+  .ast_kundli-section .kundli_sec .kundli_vedic_form .astro_col-12 {
+    width: 50% !important;
+  }
+
+  .ast_kundli-section .kundli_sec .kundli_vedic_group:nth-child(3) {
+    width: calc(50% - 15px) !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .ast_astro-slider-form .choose_services_box .astro_box .multi_lang {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+
+  .ast_astro-slider-form .kundli_vedic_login_form>* {
+    flex: 0 0 auto;
+    width: 20% !important;
+  }
+
+  .ast_astro-slider-form #choghadiya-mahurat #form-choghadiya .kundli_vedic_group {
+    width: 20% !important;
+  }
+
+  .ast_astro-slider-form #form-hora .kundli_vedic_group:nth-child(3) {
+    width: 20% !important;
+  }
+
+  .ast_astro-slider-form #form-hora .kundli_vedic_login_form .kundli_vedic_login_form>.kundli_vedic_group:last-child,
+  .ast_astro-slider-form #choghadiya-mahurat #form-choghadiya .kundli_vedic_group:last-child,
+  .ast_astro-slider-form #numberology_sec_data #form-numberology .kundli_vedic_group:last-child {
+    position: relative;
+    right: unset;
+    top: 13px;
+    width: 25% !important;
+  }
+
+  .ast_astro-slider-form #form-kundali .kundli_vedic_login_form .kundli_vedic_login_form>* {
+    flex: 0 0 auto;
+    width: 20% !important;
+  }
+
+  .ast_astro-slider-form #form-sade-sati .choose_services_row,
+  .ast_astro-slider-form #gem-rudhraksh .kundli_key {
+    flex: 0 0 auto;
+    width: 40% !important;
+    gap: 10px;
+    grid-template-columns: 50% calc(50% - 10px) !important;
+  }
+
+  .ast_astro-slider-form #form-sade-sati .choose_services_row>* {
+    width: 50% !important;
+  }
+
+  .ast_astro-slider-form .kundli_vedic_login_form .kundli_vedic_login_form>.kundli_vedic_group:last-child,
+  .ast_astro-slider-form #sade-sati-kundli #form-sade-sati .kundli_vedic_login_form>.kundli_vedic_group:last-child,
+  .ast_astro-slider-form #gem-rudhraksh .kundli_vedic_login_form>.kundli_vedic_group:last-child {
+    position: absolute;
+    right: 0;
+    top: 35px;
+  }
+
+  .ast_astro-slider-form section#panchang_sec_data .kundli_vedic_login_form>.kundli_vedic_group:first-of-type {
+    width: 40% !important;
+  }
+
+  .ast_astro-slider-form section#panchang_sec_data .kundli_vedic_login_form>.kundli_vedic_group:last-child {
+    top: 20px;
+  }
+
+  .ast_astro-slider-form #moon_calendar_data #form-panchang-moon .kundli_vedic_login_form>.kundli_vedic_group:last-child {
+    width: 30% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .ast_astro-slider-form #form-kundali .kundli_vedic_login_form .kundli_vedic_login_form {
+    padding: 5px !important;
+  }
+
+  .ast_astro-slider-form .kundli_vedic_login_form .kundli_vedic_group input[type="submit"] {
+    margin: auto !important;
+  }
+
+  .ast_astro-slider-form #gem-rudhraksh .kundli_key {
+    width: 100% !important;
+  }
+
+  .ast_astro-slider-form section#panchang_sec_data .kundli_vedic_login_form>.kundli_vedic_group:first-of-type {
+    width: 100% !important;
+  }
+}
+
+.ast_kundli-section .kundli_sec #kundli-lagan-chart {
+  height: auto !important;
+}
+
+/* -------- Modal ---------- */
+.ast_astro-slider-form .astro_box,
+.ast_kundli-section #service-kundli .astro_box,
+.ast_astro-slider-form .ast_vedicastro_popup,
+.ast_astro-slider-form #rudraksh_res_data,
+.ast_astro-slider-form #sade_sati_res_data,
+.ast_astro-slider-form #hora_data,
+.ast_astro-slider-form #numerology-data,
+.ast_astro-slider-form #retro-planites,
+.ast_astro-slider-form #choghadiya_data {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  background-color: rgb(0 0 0 / 49%);
+  overflow: hidden;
+  opacity: 0;
+}
+
+.ast_astro-slider-form .ast_form_box div#sade_sati_res_data.ast__popup-show {
+  height: 100% !important;
+}
+
+.ast_astro-slider-form .astro_boxes,
+.ast_kundli-section #service-kundli .astro_box .astro_boxes,
+.ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner,
+.ast_astro-slider-form #rudraksh_res_data .sde_sati_group,
+.ast_astro-slider-form #sade_sati_res_data .sde_sati_group,
+.ast_astro-slider-form #hora_data .astro_box_grid,
+.ast_astro-slider-form #numerology-data .numberlogy_grid,
+.ast_astro-slider-form #retro-planites .choose_services_row,
+.ast_astro-slider-form #choghadiya_data .astro_box_grid {
+  position: relative;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  z-index: 9999;
+  max-height: 600px;
+  visibility: visible;
+  overflow: auto;
+  border: 3px solid #fff;
+  box-shadow: 2px 0 15px -2px rgba(0, 0, 0, 0.2);
+}
+
+.ast_astro-slider-form .kundli_sec #kundli-lagan-chart,
+.ast_kundli-section .kundli_sec #kundli-lagan-chart,
+.ast_kundli-section .kundli_sec #kundli-navamsa,
+.ast_astro-slider-form .lagan_chart_tabs_main #kundli-navamsa,
+.ast_kundli-section .lagan_chart_tabs_main .kundli_lagan_chart,
+.ast_kundli-matching-section .choose_services_row .kundli_lagan_chart,
+.ast_kundli-matching-section .lagan_chart_birth_title {
+  text-align: center;
+}
+
+.ast_astro-slider-form .astro_box.ast__popup-show,
+.ast_kundli-section #service-kundli .astro_box.ast__popup-show,
+.ast_astro-slider-form .ast_vedicastro_popup,
+.ast_astro-slider-form #rudraksh_res_data.ast__popup-show,
+.ast_astro-slider-form #sade_sati_res_data.ast__popup-show,
+.ast_astro-slider-form #hora_data.ast__popup-show,
+.ast_astro-slider-form #numerology-data.ast__popup-show,
+.ast_astro-slider-form #retro-planites.ast__popup-show,
+.ast_astro-slider-form #choghadiya_data.ast__popup-show {
+  opacity: 1;
+  overflow: hidden;
+  visibility: visible;
+}
+
+.ast_astro-slider-form .astro_box.ast__popup-show,
+.ast_kundli-section #service-kundli .astro_box.ast__popup-show,
+.ast_astro-slider-form #rudraksh_res_data.ast__popup-show,
+.ast_astro-slider-form #sade_sati_res_data.ast__popup-show,
+.ast_astro-slider-form #hora_data.ast__popup-show,
+.ast_astro-slider-form #numerology-data.ast__popup-show,
+.ast_astro-slider-form #retro-planites.ast__popup-show,
+.ast_astro-slider-form #choghadiya_data.ast__popup-show {
+  display: flex !important;
+}
+
+.ast_astro-slider-form .ast_vedicastro_popup {
+  display: flex;
+}
+
+.ast_astro-slider-form .astro_box.ast__popup-show .astro_boxes,
+.ast_kundli-section #service-kundli .astro_box.ast__popup-show .astro_boxes,
+.ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner,
+.ast_astro-slider-form #rudraksh_res_data.ast__popup-show .sde_sati_group,
+.ast_astro-slider-form #sade_sati_res_data.ast__popup-show .sde_sati_group,
+.ast_astro-slider-form #hora_data.ast__popup-show .astro_box_grid,
+.ast_astro-slider-form #numerology-data.ast__popup-show .numberlogy_grid,
+.ast_astro-slider-form #retro-planites.ast__popup-show .choose_services_row,
+.ast_astro-slider-form #choghadiya_data.ast__popup-show .astro_box_grid {
+  animation: zoomIn 0.5s ease-in-out forwards;
+}
+
+.ast_astro-slider-form .ast_popup_close,
+.ast_kundli-section .ast_popup_close,
+.ast_kundli-matching-section .ast_popup_close,
+.ast__astrocare-horoscope-form .ast_popup_close {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  color: var(--white-color);
+}
+
+.ast_astro-slider-form .vedicastro-lagan-chart-contents a,
+.ast_kundli-section .vedicastro-lagan-chart-contents a,
+.ast_kundli-matching-section .vedicastro-lagan-chart-contents a,
+.ast_astro-slider-form #chart_content_menu_data-wrapper label,
+.ast_kundli-matching-section .chart-wrapper label,
+.ast_kundli-section #chart_content_menu_data-wrapper label {
+  color: var(--primary-color);
+}
+
+.ast_astro-slider-form .lagan_chart_tabs_main .lagan_chart_tabs_main_data .display_flex,
+.ast__astrocare-horoscope-form .predictions_sec .astro_content_tabs .display_flex,
+.ast_kundli-section .kundli_sec .astro_content_tabs .display_flex,
+.ast_kundli-matching-section .panchang_sec .astro_content_tabs .display_flex {
+  display: flex !important;
+  background-color: var(--white-color);
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  justify-content: center;
+  padding: 20px 0px !important;
+}
+
+.ast_astro-slider-form .astro_content_menu li a,
+.ast_kundli-section .kundli_sec .astro_content_tabs .display_flex li a,
+.ast_kundli-matching-section .kundli_sec .astro_content_tabs .display_flex li a,
+.ast__astrocare-horoscope-form .panchang_sec .astro_content_tabs .display_flex li a {
+  border: 1px solid var(--primary-color) !important;
+  background-color: var(--white-color) !important;
+  border-radius: 10px !important;
+  font-weight: 500 !important;
+}
+
+.ast_astro-slider-form .astro_content_menu li:hover a,
+.ast_astro-slider-form .astro_content_menu li:focus-within a,
+.ast_astro-slider-form .astro_content_menu li.active a,
+.ast_kundli-section .kundli_sec .astro_content_tabs .display_flex li:hover a,
+.ast_kundli-section .kundli_sec .astro_content_tabs .display_flex li:focus-within a,
+.ast_kundli-section .kundli_sec .astro_content_tabs .display_flex li.active a,
+.ast_kundli-matching-section .panchang_sec .astro_content_tabs .display_flex li:hover a,
+.ast_kundli-matching-section .panchang_sec .astro_content_tabs .display_flex li:focus-within a,
+.ast_kundli-matching-section .panchang_sec .astro_content_tabs .display_flex li.active a,
+.ast__astrocare-horoscope-form .predictions_sec .astro_content_tabs .display_flex li:hover a,
+.ast__astrocare-horoscope-form .predictions_sec .astro_content_tabs .display_flex li:focus-within a,
+.ast__astrocare-horoscope-form .predictions_sec .astro_content_tabs .display_flex li.active a {
+  border: 1px solid var(--primary-color) !important;
+  color: var(--white-color) !important;
+  background: var(--primary-color) !important;
+}
+
+.ast_astro-slider-form table.lagan_birth_table_data,
+.astro__panchang-section table.lagan_birth_table_data,
+.ast_kundli-matching-section table.lagan_birth_table_data,
+.ast_kundli-section table.lagan_birth_table_data {
+  border: 1px solid var(--primary-color) !important;
+}
+
+.astro__panchang-section .day_details_table {
+  margin-top: 15px;
+}
+
+.ast_astro-slider-form table.lagan_birth_table_data tbody tr td,
+.astro__panchang-section table.lagan_birth_table_data tbody tr td,
+.ast_astro-slider-form table.lagan_birth_table_data thead tr th,
+.ast_kundli-matching-section table.lagan_birth_table_data tbody tr td,
+.ast_kundli-matching-section table.lagan_birth_table_data thead tr th,
+.ast_kundli-section table.lagan_birth_table_data tbody tr td,
+.ast_kundli-section table.lagan_birth_table_data thead tr th {
+  border-right: 1px solid var(--primary-color) !important;
+  border-top: 1px solid var(--primary-color) !important;
+}
+
+.ast_astro-slider-form .lagan_chart_birth_table table.lagan_birth_table_data th,
+.astro__panchang-section .lagan_chart_birth_table table.lagan_birth_table_data th,
+.ast_astro-slider-form .lagan_chart_birth_table table.lagan_birth_table_data td,
+.astro__panchang-section .lagan_chart_birth_table table.lagan_birth_table_data td,
+.ast_kundli-matching-section .lagan_chart_birth_table table.lagan_birth_table_data th,
+.ast_kundli-matching-section .lagan_chart_birth_table table.lagan_birth_table_data td,
+.ast_kundli-section .lagan_chart_birth_table table.lagan_birth_table_data th,
+.ast_kundli-section .lagan_chart_birth_table table.lagan_birth_table_data td {
+  border-color: var(--primary-color);
+}
+
+.ast_astro-slider-form .lagan_birth_table_data thead tr th,
+.astro__panchang-section .lagan_birth_table_data thead tr th,
+.ast_kundli-matching-section .lagan_birth_table_data thead tr th,
+.ast_kundli-section .lagan_birth_table_data thead tr th {
+  background: var(--primary-lite-02);
+}
+
+.ast_astro-slider-form table.lagan_birth_table_data tr td:first-child,
+.astro__panchang-section table.lagan_birth_table_data tr td:first-child,
+.ast_kundli-matching-section table.lagan_birth_table_data tr td:first-child,
+.ast_kundli-section table.lagan_birth_table_data tr td:first-child {
+  background: var(--primary-lite-02) !important;
+}
+
+.ast_astro-slider-form table.lagan_birth_table_data tr td:first-child:hover,
+.astro__panchang-section table.lagan_birth_table_data tr td:first-child:hover,
+.ast_kundli-matching-section table.lagan_birth_table_data tr td:first-child:hover,
+.ast_kundli-section table.lagan_birth_table_data tr td:first-child:hover {
+  background: var(--white-color) !important;
+}
+
+.ast_astro-slider-form .dashas_dosh,
+.astro__sadesati-section .dashas_dosh,
+.ast_kundli-section .dashas_dosh,
+.ast_kundli-matching-section .dashas_dosh,
+.ast_astro-slider-form .lagan_chart_birth .choose_services_row .dashas_dosh {
+  border: 1px solid var(--primary-color) !important;
+}
+
+.ast_astro-slider-form .retro_planites .retro_planites_box {
+  padding: 60px 25px 25px 25px;
+}
+
+.ast_astro-slider-form #numberology_sec_data .Numerology_count_number .numberlogy_grid {
+  grid-template-columns: repeat(1, 1fr) !important;
+}
+
+.ast_astro-slider-form #numberology_sec_data .Numerology_count_number .numberlogy_grid .kundli_vedic {
+  border: 1px solid var(--primary-color) !important;
+  padding: 15px 10px !important;
+}
+
+.ast_kundli-section #service-kundli .lagan_chart_birth_title h4 {
+  text-align: center;
+}
+
+.ast_astro-slider-form .Numerology_count_number .numberlogy_grid .kundli_vedic .kundli_vedic_login_form>* {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.ast_astro-slider-form .astro_boxes::-webkit-scrollbar-track,
+.ast_kundli-section .astro_box .astro_boxes::-webkit-scrollbar-track,
+.ast_astro-slider-form #rudraksh_res_data .sde_sati_group::-webkit-scrollbar-track,
+.ast_astro-slider-form #choghadiya_data.ast__popup-show .astro_box_grid::-webkit-scrollbar-track,
+.ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner::-webkit-scrollbar-track,
+.ast_astro-slider-form #retro-planites .choose_services_row::-webkit-scrollbar-track,
+.ast_astro-slider-form #numerology-data .numberlogy_grid::-webkit-scrollbar-track,
+.ast_astro-slider-form #sade_sati_res_data .sde_sati_group::-webkit-scrollbar-track,
+.ast__astrocare-horoscope-form .zodic_data::-webkit-scrollbar-track,
+.ast_kundli-matching-section .maching_main_tab_all_chart::-webkit-scrollbar-track,
+.ast_astro-slider-form #hora_data.ast__popup-show .astro_box_grid::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #F5F5F5;
+}
+
+.ast_astro-slider-form .astro_boxes::-webkit-scrollbar,
+.ast_kundli-section .astro_box .astro_boxes::-webkit-scrollbar,
+.ast__astrocare-horoscope-form .zodic_data::-webkit-scrollbar,
+.ast_kundli-matching-section .maching_main_tab_all_chart::-webkit-scrollbar,
+.ast_astro-slider-form #rudraksh_res_data .sde_sati_group::-webkit-scrollbar,
+.ast_astro-slider-form #choghadiya_data.ast__popup-show .astro_box_grid::-webkit-scrollbar,
+.ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner::-webkit-scrollbar,
+.ast_astro-slider-form #retro-planites .choose_services_row::-webkit-scrollbar,
+.ast_astro-slider-form #numerology-data .numberlogy_grid::-webkit-scrollbar,
+.ast_astro-slider-form #sade_sati_res_data .sde_sati_group::-webkit-scrollbar,
+.ast_astro-slider-form #hora_data.ast__popup-show .astro_box_grid::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+.ast_astro-slider-form .astro_boxes::-webkit-scrollbar-thumb,
+.ast_kundli-section .astro_box .astro_boxes::-webkit-scrollbar-thumb,
+.ast__astrocare-horoscope-form .zodic_data::-webkit-scrollbar-thumb,
+.ast_kundli-matching-section .maching_main_tab_all_chart::-webkit-scrollbar-thumb,
+.ast_astro-slider-form #rudraksh_res_data .sde_sati_group::-webkit-scrollbar-thumb,
+.ast_astro-slider-form #hora_data.ast__popup-show .astro_box_grid::-webkit-scrollbar-thumb,
+.ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner::-webkit-scrollbar-thumb,
+.ast_astro-slider-form #retro-planites .choose_services_row::-webkit-scrollbar-thumb,
+.ast_astro-slider-form #numerology-data .numberlogy_grid::-webkit-scrollbar-thumb,
+.ast_astro-slider-form #sade_sati_res_data .sde_sati_group::-webkit-scrollbar-thumb,
+.ast_astro-slider-form #choghadiya_data.ast__popup-show .astro_box_grid::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #56565B;
+}
+
+/* -------- Start:Horoscope Section   ------------*/
+.ast_vertical_item {
+  position: relative;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid var(--primary-color);
+  text-align: center;
+  overflow: hidden;
+  z-index: 0;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast_vertical_item .zodiac_img {
+  margin-bottom: 10px;
+}
+
+.ast_vertical_item .zodiac_img img {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.ast_vertical_item .zodiac_title {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--black-color);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.ast_vertical_item p {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-color);
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.ast_vertical_item:hover .zodiac_title a,
+.ast_vertical_item:focus-within .zodiac_title a,
+.ast_vertical_item:hover p,
+.ast_vertical_item:focus-within p {
+  color: var(--white-color);
+}
+
+.ast_vertical_item:hover .zodiac_img img,
+.ast_vertical_item:focus-within .zodiac_img img {
+  -webkit-transform: scale(-1) rotate(180deg);
+  transform: scale(-1) rotate(180deg);
+}
+
+.ast_vertical_item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: var(--primary-color);
+  border-radius: 0px;
+  z-index: -1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.ast_vertical_item:hover:after,
+.ast_vertical_item:focus-within:after {
+  height: 100%;
+}
+
+.ast__astrocare-horoscope-form .choose_services_box.bdr-gray {
+  border: none !important;
+  padding: 0px !important;
+}
+
+.ast__astrocare-horoscope-form .predictions_sec {
+  padding: 0px !important;
+}
+
+.ast__astrocare-horoscope-form .astro_box {
+  padding-bottom: 0px !important;
+}
+
+.ast__astrocare-horoscope-form .choose_services_box .heading_title {
+  display: none;
+}
+
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign {
+  padding-left: 0px !important;
+}
+
+.ast__astrocare-horoscope-form section#predictions_data .zodic_sign .choose_services_row {
+  width: 100%;
+  grid-gap: 30px 20px;
+  margin-bottom: 0px !important;
+  justify-content: center;
+}
+
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab {
+  width: 180px;
+  position: relative;
+  padding: 25px 12px;
+  border-radius: 16px;
+  border: 1px solid var(--primary-color);
+  text-align: center;
+  overflow: hidden;
+  z-index: 0;
+  height: 100%;
+  box-shadow: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab .zodics_icon {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab .zodics_icon img {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab .zodics_content p {
+  font-size: 18px !important;
+  line-height: 20px;
+  color: var(--black-color);
+  font-weight: 500 !important;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: var(--primary-color) !important;
+  border-radius: 0px;
+  z-index: -1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab:hover:after,
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab:focus-within:after {
+  height: 100%;
+}
+
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab.active {
+  background-color: var(--primary-color) !important;
+}
+
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab.active .zodics_icon img,
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab:hover .zodics_icon img,
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab:focus-within .zodics_icon img {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+  -webkit-transform: scale(-1) rotate(180deg);
+  transform: scale(-1) rotate(180deg);
+}
+
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .zodics_sign_tab.active .zodics_content p,
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .zodics_sign_tab:hover .zodics_content p,
+.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .zodics_sign_tab:focus-within .zodics_content p {
+  color: var(--white-color);
+}
+
+.ast__astrocare-horoscope-form .zodic_data,
+.ast_kundli-matching-section .maching_main_tab_all_chart {
+  position: fixed;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 0%;
+  max-width: 0px;
+  height: auto;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  max-height: 600px;
+  overflow: auto;
+  border: 3px solid #fff;
+  box-shadow: 2px 0 15px -2px rgba(0, 0, 0, 0.2);
+}
+
+.ast__astrocare-horoscope-form .zodic_data.zodic_data_show,
+.ast_kundli-matching-section .maching_main_tab_all_chart.ast__popup-show {
+  width: 100%;
+  max-width: 650px;
+  animation: as_zoomIn 0.5s ease-in-out forwards;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes as_zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) scale3d(.3, .3, .3);
+    transform: translate(-50%, -50%) scale3d(.3, .3, .3)
+  }
+
+  50% {
+    opacity: 1
+  }
+}
+
+.zodic_overlay_show {
+  position: relative;
+  z-index: 0;
+}
+
+.zodic_overlay_show:after {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000094;
+  z-index: 999;
+}
+
+.ast_astro-slider-form .error,
+.ast__astrocare-horoscope-form .error {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  background: var(--white-color);
+}
+
+.ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.ast__astrocare-horoscope-form .gradient_row .gradient_box .bdr-gray {
+  border: 1px solid var(--primary-color);
+  min-height: auto;
+  padding: 20px 25px;
+}
+
+.ast__astrocare-horoscope-form .gradient_row .gradient_box .gradient_left .fs-40 {
+  font-size: 24px !important;
+}
+
+.ast__astrocare-horoscope-form .gradient_row .gradient_box .gradient_left .fs-20 {
+  font-size: 16px !important;
+  color: var(--white-color);
+}
+
+/* -------- Start:End Section   ------------*/
+
+
+/* --------  Start:- Product Section  --------- */
+.product {
+  height: 100%;
+}
+
+.product-single {
+  position: relative;
+  border: 1px solid var(--primary-color);
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 15px;
+  height: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.product-single .product-img {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+  background-color: var(--primary-lite-02);
+  border-radius: 15px;
+}
+
+.product-single .product-img:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-color);
+  opacity: 0;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.product-single .product-img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.product-single:hover .product-img img,
+.product-single:focus-within .product-img img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.product-single .product-img .sale-ribbon {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 0px;
+  text-align: center;
+  text-transform: capitalize;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+  display: block;
+  font-weight: 600;
+}
+
+.product-single .product-content-outer {
+  padding: 25px 0px 0;
+  transition: all 0.3s ease;
+}
+
+.product-single .product-content-outer h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--black-color);
+  margin-bottom: 10px;
+}
+
+.product-single .product-content-outer .amount {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 600;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.product-single .product-content-outer del .amount {
+  margin-right: 8px;
+  color: #8e8e8e;
+}
+
+.product-single .product-content-outer ins .amount {
+  color: var(--black-color);
+}
+
+.product-action {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform: translateY(-60px) translateX(-50%);
+  transition: all 0.4s ease;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+
+.product-action .yith-wcwl-add-to-wishlist {
+  margin-top: 0px;
+}
+
+.product-action .yith-wcwl-add-button>a i {
+  margin-right: 0px;
+}
+
+.product-action .button,
+.product-action .add_to_wishlist,
+.product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse,
+.product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button,
+.product-action .compare-button a.compare {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  margin-right: 0;
+  overflow: hidden;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-action .compare-button a.compare,
+.product-action .add_to_wishlist span,
+.product-action .added_to_cart .wc-forward,
+.product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse span,
+.product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button span,
+.product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse a,
+.product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button a {
+  font-size: 0px !important;
+}
+
+.product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse span i,
+.product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse span svg,
+.product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button i,
+.product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button svg {
+  width: 18px;
+  height: 18px;
+  font-size: 18px !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.add_to_cart_button,
+.woocommerce div.product form.cart .single_add_to_cart_button,
+.product-action .add_to_cart_button {
+  position: relative;
+  padding: 14px 30px;
+  margin: 0 10px;
+  width: auto;
+  height: auto;
+  line-height: 1.2;
+  border-radius: 10px;
+  overflow: hidden;
+  color: var(--black-color);
+  background-color: var(--primary-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  z-index: 0;
+  line-height: 20px;
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+
+.product-action .compare-button a.compare:after {
+  content: "\f021";
+  display: flex;
+  font: normal normal normal 18px/1 FontAwesome;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  margin-left: 0px !important;
+  color: var(--black-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-action .button i,
+.product-action .add_to_wishlist i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-action .yith-wcwl-add-button .add_to_wishlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-action .yith-wcwl-add-button .add_to_wishlist svg.yith-wcwl-icon-svg,
+.product-action .yith-wcwl-add-button .add_to_wishlist img {
+  width: 18px;
+  height: 18px;
+  margin-right: 0px !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  word-wrap: normal !important;
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  overflow-wrap: normal !important;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+
+/*.product-action .add_to_cart_button::before, .product-action .add_to_cart_button::after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  z-index: -1;
+  background-color:#0B2038;
+  border-radius: 50%;
+}
+.product-action .add_to_cart_button::before {
+  left: -20px;
+  transform: translate(-50%, -50%);
+}
+.product-action .add_to_cart_button::after {
+  right: -20px;
+  transform: translate(50%, -50%);
+}
+.product-action .add_to_cart_button:hover::before,
+.product-action .add_to_cart_button:focus::before {
+ animation: criss-cross-left 0.8s both;
+ animation-direction: alternate;
+}
+.product-action .add_to_cart_button:hover:after,
+.product-action .add_to_cart_button:focus:after {
+  animation: criss-cross-right 0.8s both;
+  animation-direction: alternate;
+}*/
+.product-action .add_to_cart_button:hover,
+.product-action .add_to_cart_button:focus,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.add_to_cart_button:hover,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.add_to_cart_button:focus {
+  color: var(--white-color);
+}
+
+.product-action .button:not(.add_to_cart_button):hover,
+.product-action .button:not(.add_to_cart_button):focus,
+.product-action .add_to_wishlist:hover,
+.product-action .add_to_wishlist:focus,
+.product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse:hover,
+.product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse:focus,
+.product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button:hover,
+.product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button:focus {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-color: var(--primary-color);
+}
+
+.product-action .button:not(.add_to_cart_button):hover i,
+.product-action .button:not(.add_to_cart_button):focus i,
+.product-action .add_to_wishlist:hover svg,
+.product-action .add_to_wishlist:focus svg,
+.product-action .compare-button a.compare:hover:after,
+.product-action .compare-button a.compare:focus:after,
+.product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse:hover span svg,
+.product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse:focus span svg,
+.product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button:hover svg,
+.product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button:focus svg {
+  color: var(--white-color);
+  -webkit-animation: toBottomFromTop 0.5s forwards;
+  animation: toBottomFromTop 0.5s forwards;
+}
+
+.product-single:hover .product-img:after {
+  opacity: 0.6;
+}
+
+.product-single:hover {
+  background-color: var(--white-color);
+}
+
+.product-single:hover .product-action,
+.product-single:focus-within .product-action {
+  visibility: visible;
+  transform: translateY(0px) translateX(-50%);
+  transition-delay: 300ms;
+  opacity: 1;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__wrapper {
+  position: relative;
+  border: 1px solid var(--primary-color);
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 15px;
+  height: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+  background-color: var(--primary-lite-02);
+  border-radius: 15px;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-color);
+  opacity: 0;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__wrapper:hover .woocommerce-product-gallery__image img,
+.woocommerce div.product div.images .woocommerce-product-gallery__wrapper:focus-within .woocommerce-product-gallery__image img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.woocommerce div.product span.onsale {
+  min-height: 50px;
+  min-width: 50px;
+  line-height: 45px;
+  background: var(--primary-color);
+}
+
+.woocommerce #reviews #comments h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.woocommerce #reviews #comments .commentlist {
+  padding: 0px;
+}
+
+.woocommerce #reviews #comments ol.commentlist li img.avatar {
+  border-radius: 50%;
+  padding: 2px;
+  border: 1px solid var(--primary-color);
+}
+
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+  border: 1px solid var(--primary-color);
+}
+
+.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta strong {
+  color: var(--secondary-color);
+}
+
+.woocommerce .star-rating span::before {
+  color: #ffc921;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+}
+
+
+/* --------  End:- Product Section  --------- */
+
+/*owl-nav Button*/
+
+.default-navs-two:not(.home-slider) .owl-nav button.owl-prev,
+.default-navs-two:not(.home-slider) .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  transform: translate(0, -50%);
+  border: 0.12rem solid var(--secondary-color);
+  background: transparent;
+  color: var(--heading-color);
+  transition: all 0.65s;
+  transition: all 0.65s;
+}
+
+.default-navs-two .owl-nav button.owl-prev {
+  left: -100px;
+}
+
+.default-navs-two .owl-nav button.owl-next {
+  right: -100px;
+}
+
+.owl-theme.default-navs-two:not(.home-slider) .owl-nav [class*=owl-]:hover,
+.owl-theme.default-navs-two:not(.home-slider) .owl-nav [class*=owl-]:focus {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #FFF;
+  outline-color: var(--white-color);
+}
+
+/*Kundali Matchmaking*/
+
+.ast_Kundali_matching {
+  margin: 0 10px 20px;
+
+}
+
+.ast_Kundali_matching .ast_kundali_title {
+  text-align: center;
+  padding: 0px 0px 20px 0;
+}
+
+.ast_Kundali_matching .ast_kundali_title h4 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.Kundali_matching_tab {
+  position: relative;
+  border: 1px solid var(--primary-color);
+  border-radius: 60px;
+  justify-content: center;
+  width: max-content;
+  margin: 20px auto 0;
+}
+
+.Kundali_matching_tab .nav-link {
+  padding: 12px 34px;
+  font-size: 18px;
+  color: var(--black-color);
+  font-weight: 700;
+  border-radius: 60px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.tabs .tab img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.Kundali_matching_tab .indicator {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  background-color: var(--primary-color);
+  z-index: -1;
+  transition: all ease 0.4s;
+  border-radius: inherit;
+}
+
+.Kundali_matching_tab .nav-link.active {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.ast_kundali_title h4 {
+  margin-bottom: 24px;
+}
+
+.ast_rahu-ketu-box .form-group .ast_form_field {
+  background-color: #ffefd4;
+}
+
+.ast_Kundali_matching .tabs {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  padding: 0px;
+  border-radius: 99px;
+  margin: 20px auto 0;
+}
+
+.ast_Kundali_matching .tabs * {
+  z-index: 2;
+}
+
+.ast_Kundali_matching input[type=radio] {
+  display: none;
+}
+
+.ast_Kundali_matching .tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  width: 234px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+
+.ast_Kundali_matching input[type=radio]:checked+label {
+  color: var(--white-color);
+}
+
+.ast_Kundali_matching input[type=radio]:checked+label>.notification {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.ast_Kundali_matching input[id=radio-1]:checked~.glider {
+  transform: translateX(0);
+}
+
+.ast_Kundali_matching input[id=radio-2]:checked~.glider {
+  transform: translateX(100%);
+}
+
+.ast_Kundali_matching input[id=radio-3]:checked~.glider {
+  transform: translateX(200%);
+}
+
+.ast_Kundali_matching .glider {
+  position: absolute;
+  display: flex;
+  height: 54px;
+  width: 234px;
+  background-color: var(--primary-color);
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
+}
+
+.filder_column {
+  display: none;
+}
+
+.filder_column.active {
+  display: block;
+}
+
+.ast_kundli-matching-section .panchang_sec,
+.ast_kundli-section .kundli_sec {
+  padding: 0px !important;
+}
+
+.ast_kundli-matching-section .choose_services_box,
+.ast_kundli-section .choose_services_box {
+  padding: 0px !important;
+  border: none !important;
+}
+
+.ast_kundli-matching-section .panchang_sec .choose_services_box .heading_title,
+.ast_kundli-section .choose_services_box .astro_box .heading_title {
+  display: none;
+}
+
+.ast_kundli-matching-section .panchang_sec .choose_services_box .kundli_vedic {
+  background: var(--primary-lite-01) !important;
+  border: none !important;
+}
+
+.ast_kundli-section .kundli_sec .choose_services_box .kundli_vedic {
+  background: var(--white-color) !important;
+  border: none !important;
+}
+
+.ast_kundli-section .kundli_sec .choose_services_box .kundli_vedic .kundli_vedic_login_form {
+  padding: 5px 0px 0px 0px !important;
+}
+
+.ast_kundli-matching-section .maching_data_form_login .kundli_vedic_group input {
+  padding: 16px 20px;
+  border: 1px solid var(--white-color);
+  background: var(--white-color);
+  border-radius: 10px;
+  box-shadow: none;
+  height: 60px;
+  font-size: 14px;
+  color: #454545;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast_kundli-section .kundli_sec .kundli_vedic_group input {
+  padding: 18px 20px;
+  border: 1px solid #FAF8F7;
+  background: #FAF8F7 !important;
+  height: auto !important;
+  border-radius: 0px;
+  box-shadow: none;
+  margin-bottom: 20px;
+  color: #454545;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast_kundli-matching-section .maching_data_form_login .kundli_vedic_group input:hover,
+.ast_kundli-matching-section .maching_data_form_login .kundli_vedic_group input:focus,
+.ast_kundli-section .kundli_sec .kundli_vedic_group input:hover,
+.ast_kundli-section .kundli_sec .kundli_vedic_group input:focus {
+  border-color: var(--primary-color) !important;
+}
+
+.ast_kundli-section .kundli_sec .kundli_vedic_login_form .kundli_vedic_login_form {
+  gap: 10px;
+}
+
+.ast_kundli-section .kundli_sec .kundli_vedic_group {
+  margin-top: 0px;
+}
+
+.ast_kundli-matching-section .maching_data_form .vedicastro_tab_button .matching-button,
+.ast_kundli-section .kundli_sec .kundli_vedic_group input.vedicastro_button {
+  position: relative;
+  border: none !important;
+  display: inline-block;
+  color: var(--heading-color) !important;
+  padding: 18px 25px;
+  letter-spacing: 0.3px;
+  overflow: hidden;
+  background: var(--primary-color) !important;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 0;
+  line-height: 20px;
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+
+.ast_kundli-section .kundli_sec .kundli_vedic_group input.vedicastro_button {
+  margin: auto !important;
+}
+
+.ast_kundli-matching-section #service-matching #form-matching .kundli_vedic_login_form {
+  padding: 20px 0px !important;
+}
+
+.ast_kundli-matching-section .maching_data_form .vedicastro_tab_button .matching-button:hover,
+.ast_kundli-matching-section .maching_data_form .vedicastro_tab_button .matching-button:focus {
+  color: var(--white-color) !important;
+}
+
+.ast_kundli-matching-section .maching_data_form .vedicastro_tab_button .matching-button::before,
+.ast_kundli-matching-section .maching_data_form .vedicastro_tab_button .matching-button::after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  z-index: -1;
+  background-color: #0B2038;
+  border-radius: 50%;
+}
+
+.ast_kundli-matching-section .maching_data_form .vedicastro_tab_button .matching-button::before {
+  left: -20px;
+  transform: translate(-50%, -50%);
+}
+
+.ast_kundli-matching-section .maching_data_form .vedicastro_tab_button .matching-button::after {
+  right: -20px;
+  transform: translate(50%, -50%);
+}
+
+.ast_kundli-matching-section .maching_data_form .vedicastro_tab_button .matching-button:hover:after,
+.ast_kundli-matching-section .maching_data_form .vedicastro_tab_button .matching-button:focus:after {
+  animation: criss-cross-right 0.8s both;
+  animation-direction: alternate;
+}
+
+.ast_kundli-matching-section .maching_data_form .vedicastro_tab_button .matching-button:hover::before,
+.ast_kundli-matching-section .maching_data_form .vedicastro_tab_button .matching-button:focus::before {
+  animation: criss-cross-left 0.8s both;
+  animation-direction: alternate;
+}
+
+.ast_kundli-section .kundli_sec .kundli_vedic_group input.vedicastro_button:hover,
+.ast_kundli-section .kundli_sec .kundli_vedic_group input.vedicastro_button:focus {
+  background: var(--heading-color) !important;
+  color: var(--white-color) !important;
+}
+
+.ast_kundli-matching-section .kundli_vedic_login_form.maching_data_form_login h4,
+.ast_kundli-matching-section .indian_maching_data .indian_maching.vedicastro_tab_button.mlr-15 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.ast_kundli-matching-section .panchang_sec .choose_services_row .astro_col-5 {
+  display: none;
+}
+
+.ast_kundli-matching-section .panchang_sec .choose_services_row .astro_col-5.active {
+  display: block;
+}
+
+.ast_kundli-matching-section .maching_data_form .indian_maching_data {
+  margin-bottom: 0px !important;
+}
+
+/*nav button*/
+
+.ast-nav-section .owl-theme .owl-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  margin-top: 35px;
+}
+
+.ast-nav-section .owl-carousel .owl-nav button.owl-next,
+.ast-nav-section .owl-carousel .owl-nav button.owl-prev {
+  background: none;
+}
+
+.ast-nav-section .owl-nav button:hover {
+  background-color: transparent !important;
+}
+
+.ast-nav-section .owl-nav button i.fa {
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #EFECE7;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 500ms ease;
+}
+
+.ast-nav-section .owl-nav::before,
+.ast-nav-section .owl-nav::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 75px);
+  height: 1px;
+  background-color: #D7D3CB;
+}
+
+.ast-nav-section .owl-nav::before {
+  left: 0;
+}
+
+.ast-nav-section .owl-nav::after {
+  right: 0;
+}
+
+.ast-nav-section .owl-nav button i.fa:hover {
+  background-color: var(--primary-color, #965995);
+  color: var(--white-color, #fff);
+}
+
+
+/* ---------  Start:- Free Kundali  Section ---------*/
+
+.ast_free_Kundali {
+  position: relative;
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding: 45px;
+  background-color: var(--white-color);
+}
+
+.ast_free_Kundali .ast_form_box {
+  padding-right: 40px;
+}
+
+.ast_free_Kundali_img {
+  text-align: center;
+  position: relative;
+}
+
+.ast_img_title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+  width: 99px;
+  height: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  line-height: 99px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.ast_img_title h4 {
+  margin-bottom: 0;
+}
+
+.ast_img_title h4 a {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+  color: var(--white-color);
+}
+
+.ast_free_Kundali .ast_form_box .form-group .ast_form_field {
+  padding: 16px 22px;
+  font-size: 16px;
+  border-radius: 0;
+  background-color: #FAF8F7;
+  border: 1px solid transparent;
+}
+
+.hs_waves2 {
+  position: relative;
+  top: 60px;
+  width: 420px;
+  height: 420px;
+  margin: 0px auto;
+  left: 0;
+}
+
+.hs_wave {
+  width: 100%;
+  height: 100%;
+  background: #ffe3c8;
+  border-radius: 50%;
+  left: 0px;
+  top: 0;
+  position: absolute;
+  -webkit-transform: scale(0.1, 0.1);
+  transform: scale(0.1, 0.1);
+  opacity: 0;
+  -webkit-animation: ast_pulse 4000ms ease-out infinite;
+  animation: ast_pulse 4000ms ease-out infinite;
+}
+
+.hs_wave:nth-of-type(2) {
+  -webkit-animation-delay: 900ms;
+  animation-delay: 900ms;
+}
+
+.hs_wave:nth-of-type(3) {
+  -webkit-animation-delay: 1800ms;
+  animation-delay: 1800ms;
+}
+
+.hs_wave:nth-of-type(4) {
+  -webkit-animation-delay: 2700ms;
+  animation-delay: 2700ms;
+}
+
+.hs_waves2 span {
+  position: absolute;
+  display: inline-block
+}
+
+.hs_waves2 span.ring1 {
+  top: 40%;
+  left: -10%;
+}
+
+.hs_waves2 span.ring2 {
+  top: -5%;
+  left: 25%;
+}
+
+.hs_waves2 span.ring2 img {
+  width: 39px;
+  height: 38px;
+}
+
+.hs_waves2 span.ring3 {
+  right: 15%;
+  top: 3%;
+}
+
+.hs_waves2 span.ring3 img {
+  width: 29;
+  height: 28;
+}
+
+.hs_waves2 span.ring4 {
+  bottom: 45%;
+  right: -10%;
+}
+
+.hs_waves2 span.ring5 {
+  top: 30%;
+  left: 20%;
+}
+
+.hs_waves2 span.ring6 {
+  left: 50%;
+  top: 18%;
+}
+
+.hs_waves2 span.ring7 {
+  bottom: 30%;
+  right: 25%;
+}
+
+.hs_waves2 span.ring8 {
+  left: 20%;
+  bottom: 5%;
+}
+
+.hs_waves2 span.ring9 {
+  bottom: 10%;
+  right: 12%;
+}
+
+.animate-v2 {
+  animation: upNdown11 2s linear infinite
+}
+
+.animate-v3 {
+  animation: upNdown12 2s linear infinite
+}
+
+/* ------  Start:- Astro blog Section ------*/
+
+.ast_blog_item {
+  position: relative;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 0px;
+  height: 100%;
+  background-color: var(--white-color);
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+}
+
+.ast_blog_item .ast_blog_img {
+  position: relative;
+  display: block;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.ast_blog_item .ast_blog_img:before,
+.horoscope_reports-item .horoscope_reports-img:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 10;
+}
+
+.ast_blog_item .ast_blog_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.01);
+  border-radius: 20px 20px 0 0;
+  -webkit-transition: all 700ms ease;
+  transition: all 700ms ease;
+}
+
+.ast_blog_item:hover .ast_blog_img::before,
+.ast_blog_item:focus-within .ast_blog_img::before,
+.horoscope_reports-item:hover .horoscope_reports-img:before,
+.horoscope_reports-item:focus-within .horoscope_reports-img:before {
+  -webkit-animation: circle .75s;
+  animation: circle .75s;
+}
+
+.ast_blog_item:hover .ast_blog_img img,
+.ast_blog_item:focus-within .ast_blog_img img,
+.horoscope_reports-item:hover .horoscope_reports-img img,
+.horoscope_reports-item:focus-within .horoscope_reports-img img {
+  transform: scale(1.2);
+}
+
+.ast_blog_item .ast_blog_content {
+  position: relative;
+}
+
+.ast_blog_item .ast_blog_content .ast_blog_date .date {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  line-height: 24px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.ast_blog_item .ast_blog_content .ast_blog_title {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.ast_blog_item .ast_blog_content .ast_blog_btn .astro_btn {
+  padding: 15px 30px;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.ast_blog_item .ast_blog_content .ast_blog_btn .astro_btn:after,
+.ast_blog_item .ast_blog_content .ast_blog_btn .astro_btn:before {
+  background-color: var(--primary-color);
+}
+
+.ast_blog_item .ast_blog_content .ast_blog_btn .astro_btn:hover,
+.ast_blog_item .ast_blog_content .ast_blog_btn .astro_btn:focus {
+  color: var(--white-color);
+}
+
+.ast_blog_post {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 0 8px 0;
+  justify-content: space-between;
+}
+
+.ast_blog_post a {
+  position: relative;
+  padding: 12px 0px;
+  display: inline-block;
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ast_blog_post a i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+  animation-name: tada;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+/*Blog Detail*/
+
+.comments-area {
+  position: relative;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 0px;
+  background-color: var(--white-color);
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+}
+
+.single-comments-title {
+  margin-bottom: 1.7rem;
+  text-align: left;
+}
+
+.comment-list,
+.comment-list .children {
+  list-style: none;
+  padding: 0;
+}
+
+.comment-body {
+  margin-left: 65px;
+}
+
+.comment-body {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--primary-color);
+}
+
+.comment-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  padding: 7px;
+  border-radius: 14px 14px 0 0;
+  background-color: var(--primary-lite-02);
+  border-bottom: 1px dashed var(--primary-color);
+  font-size: 14px;
+}
+
+.comment-author {
+  z-index: 2;
+}
+
+.comment-author .avatar {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -78px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid var(--bs-border);
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.comments-area .children .comment .comment-body {
+  margin-left: 0px;
+  margin-right: 65px;
+}
+
+.comments-area .comment .children .comment-meta .comment-author .avatar {
+  left: unset;
+  right: -78px;
+}
+
+.comment-metadata a {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.comment-body a {
+  color: var(--secondary-color);
+}
+
+.comment-author .says {
+  display: none;
+}
+
+.comment-metadata a.comment-edit-link {
+  margin-left: 1em;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.comment-content {
+  margin: 0 1.25rem;
+}
+
+.comment-content a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.comment-metadata a.comment-edit-link:hover,
+.comment-metadata a.comment-edit-link:focus {
+  text-decoration: none;
+}
+
+.comment-body .reply {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 0 1.25rem;
+}
+
+.comment-reply-link {
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.comment-reply-link:before {
+  content: "\f112";
+  font-family: 'FontAwesome';
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.comments-area .comment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 1.5rem;
+}
+
+.comment-form input[type="date"],
+.comment-form input[type="time"],
+.comment-form input[type="datetime-local"],
+.comment-form input[type="week"],
+.comment-form input[type="month"],
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form input[type="password"],
+.comment-form input[type="search"],
+.comment-form input[type="tel"],
+.comment-form input[type="number"],
+.comment-form input[type="file"],
+.comment-form select,
+.comment-form textarea {
+  padding: 0.625em 0.4375em;
+  width: 100%;
+  padding: 18px 20px;
+  border: 1px solid #FAF8F7;
+  background: #FAF8F7;
+  border-radius: 0px;
+  outline: none;
+  box-shadow: none;
+  color: #454545;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.comments-area form p {
+  vertical-align: middle;
+}
+
+.comment-form-comment,
+.comment-form-url,
+.comment-form-cookies-consent {
+  flex-basis: 100%;
+}
+
+.comments-area form p label {
+  margin-bottom: 0.625rem;
+}
+
+.comment-form-comment textarea {
+  height: 8.5rem;
+}
+
+.comment-form-author,
+.comment-form-email {
+  flex: auto;
+}
+
+.comment-form button[type="submit"],
+.comment-form input[type="button"],
+.comment-form input[type="reset"],
+.comment-form input[type="submit"] {
+  padding: 15px 20px;
+  position: relative;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  line-height: 1.2;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.comment-form input[type="date"]:hover,
+.comment-form input[type="time"]:hover,
+.comment-form input[type="datetime-local"]:hover,
+.comment-form input[type="week"]:hover,
+.comment-form input[type="month"]:hover,
+.comment-form input[type="text"]:hover,
+.comment-form input[type="email"]:hover,
+.comment-form input[type="url"]:hover,
+.comment-form input[type="password"]:hover,
+.comment-form input[type="search"]:hover,
+.comment-form input[type="tel"]:hover,
+.comment-form input[type="number"]:hover,
+.comment-form input[type="file"]:hover,
+.comment-form select:hover,
+.comment-form textarea:hover,
+.comment-form input[type="date"]:focus,
+.comment-form input[type="time"]:focus,
+.comment-form input[type="datetime-local"]:focus,
+.comment-form input[type="week"]:focus,
+.comment-form input[type="month"]:focus,
+.comment-form input[type="text"]:focus,
+.comment-form input[type="email"]:focus,
+.comment-form input[type="url"]:focus,
+.comment-form input[type="password"]:focus,
+.comment-form input[type="search"]:focus,
+.comment-form input[type="tel"]:focus,
+.comment-form input[type="number"]:focus,
+.comment-form input[type="file"]:focus,
+.comment-form select:focus,
+.comment-form textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.comment-form button[type="submit"]:hover,
+.comment-form button[type="submit"]:focus,
+.comment-form input[type="button"]:hover,
+.comment-form input[type="button"]:focus,
+.comment-form input[type="reset"]:hover,
+.comment-form input[type="reset"]:focus,
+.comment-form input[type="submit"]:hover,
+.comment-form input[type="submit"]:focus {
+  background-color: var(--heading-color);
+  color: var(--white-color);
+}
+
+/*Footer*/
+
+.ast_footer_wrapper {
+  background-color: var(--heading-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.ast_footer_top {
+  padding: 0px 0 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  border-bottom: 1px solid #56565645;
+}
+
+.ast_footer_logo img {
+  width: 210px;
+  height: auto;
+}
+
+.ast_ft_copyright .copyright-text,
+.ast_ft_policy .py_policy {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: var(--white-color);
+}
+
+.ast_ft_copyright .copyright-text a {
+  color: var(--primary-color);
+}
+
+.footer_top_right {
+  text-align: right;
+}
+
+.footer_top_right .ft_social_icon {
+  justify-content: end;
+  margin-bottom: 24px;
+}
+
+.footer_top_right .ft_social_icon .ft_icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.footer-newsletter {
+  position: relative;
+}
+
+.footer-newsletter input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #101431;
+  width: 100%;
+  border: 0;
+  background-color: var(--white-color);
+  border-radius: 0px;
+  height: 52px;
+  padding-left: 20px;
+  padding-right: 80px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-transform: capitalize;
+  box-shadow: none;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer-newsletter .mask-style1 {
+  color: var(--white-color);
+  font-size: 16px;
+  background-color: var(--primary-color);
+  padding: 8px 20px;
+  line-height: 1;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  display: inline-block;
+  border-radius: 0px;
+  border: none;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer-newsletter input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.starfield {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.starfield span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  background-image: -webkit-radial-gradient(2px 2px at 40px 60px, #cccccc, rgba(0, 0, 0, 0)), -webkit-radial-gradient(2px 2px at 20px 50px, #dddddd, rgba(0, 0, 0, 0)), -webkit-radial-gradient(2px 2px at 30px 100px, #eeeeee, rgba(0, 0, 0, 0)), -webkit-radial-gradient(2px 2px at 40px 60px, #ffffff, rgba(0, 0, 0, 0)), -webkit-radial-gradient(2px 2px at 110px 90px, #cccccc, rgba(0, 0, 0, 0)), -webkit-radial-gradient(2px 2px at 190px 150px, #dddddd, rgba(0, 0, 0, 0));
+  background-image: radial-gradient(2px 2px at 40px 60px, #cccccc, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 20px 50px, #dddddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 30px 100px, #eeeeee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 60px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 110px 90px, #cccccc, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 190px 150px, #dddddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  -webkit-animation-name: starfieldRotate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-duration: 45s;
+}
+
+.starfield .fb-span {
+  -webkit-animation-name: starfieldRotateright;
+}
+
+.starfield>*:nth-child(1) {}
+
+.starfield>*:nth-child(2) {
+  /*  -webkit-animation-duration: 16s;*/
+  animation-delay: -2.3s;
+}
+
+.starfield>*:nth-child(3) {
+  animation-delay: -6.6s;
+}
+
+.starfield>*:nth-child(4) {
+  animation-delay: -9s;
+}
+
+.starfield>*:nth-child(6) {
+  /*  -webkit-animation-duration: 16s;*/
+  animation-delay: -2.3s;
+}
+
+.starfield>*:nth-child(7) {
+  animation-delay: -6.6s;
+}
+
+.starfield>*:nth-child(8) {
+  animation-delay: -9s;
+}
+
+@-webkit-keyframes starfieldRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes starfieldRotateright {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+/*Breadcrumb-section*/
+
+.ast_breadcrumb-section {
+  text-align: center;
+  position: relative;
+  padding: 250px 0 100px 0;
+  background-color: #7f3f00;
+}
+
+.ast_breadcrumb-section .ast_breadcrumb-content {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+.ast_breadcrumb-links {
+  display: inline-block;
+  background-color: #8c4500;
+  padding: 18px 22px;
+  border-radius: 0px;
+}
+
+.ast_breadcrumb-links li {
+  display: inline-block;
+  line-height: 1.4;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.ast_breadcrumb-links li a {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-color);
+  line-height: 20px;
+  margin-right: 5px;
+}
+
+/* -------  Start:- Blog Page  ---------*/
+.ast_section .ast_blog_filter {
+  margin: 0 0 25px 0;
+  text-align: left;
+}
+
+.blog_search_box .form-group {
+  position: relative;
+  display: flex;
+}
+
+.blog_search_box .form-group .ast_form_field {
+  padding: 12px 60px 12px 15px;
+}
+
+.blog_search_box .form-group .blog_search_icon {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  font-size: 16px;
+  color: var(--heading-color);
+}
+
+/*   -------  Start:-  Blog Detail  ---------- */
+.ast_blog_detail .ast_blog_item {
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+.ast_blog_detail .ast_blog_detail_item {
+  height: auto;
+}
+
+.ast_blog_detail .ast_blog_item .ast_blog_content {
+  padding: 30px;
+}
+
+.ast_blog_detail .ast_blog_item .ast_blog_content .ast_blog_title {
+  font-size: 32px;
+  margin: 15px 0 20px 0;
+}
+
+.ast_blog_detail .ast_blog_item .ast_blog_content p {
+  margin-bottom: 24px;
+}
+
+.ast-post-pagination .navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+}
+
+.woocommerce nav.woocommerce-pagination ul,
+.ast-post-pagination .pagination .nav-links {
+  display: inline-flex;
+  border: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li {
+  border-right: none;
+}
+
+.ast-post-pagination .pagination .page-numbers:not(.dots),
+.woocommerce-pagination ul .page-numbers:not(.dots) {
+  font-weight: 500;
+  border: 0px;
+  color: var(--secondary-color);
+  background-color: var(--primary-lite-01);
+  display: flow-root;
+  font-size: 18px;
+  line-height: 46px;
+  min-width: 46px;
+  height: 46px;
+  width: 46px;
+  padding: 0px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  position: relative;
+  text-decoration: none;
+  border-radius: 6.25rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ast-post-pagination .pagination .page-numbers.dots,
+.woocommerce-pagination ul .page-numbers.dots {
+  display: inline-block;
+  line-height: 16px;
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+.ast-post-pagination .pagination .nav-links a:hover,
+.ast-post-pagination .pagination .nav-links a:focus,
+.ast-post-pagination .pagination .nav-links .page-numbers.current {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+  color: var(--white-color);
+  background: var(--primary-color);
+}
+
+.ast-post-pagination .pagination .page-numbers:not(.dots):not(:last-child) {
+  margin-right: 7px;
+}
+
+.woocommerce nav.woocommerce-pagination ul li+li {
+  margin-left: 7px;
+}
+
+.ast-post-pagination .pagination .page-numbers.next:hover,
+.ast-post-pagination .pagination .page-numbers.next:focus,
+.ast-post-pagination .pagination .page-numbers.prev:hover,
+.ast-post-pagination .pagination .page-numbers.prev:focus {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/*default-navs*/
+.default-navs.owl-theme .owl-nav {
+  position: absolute;
+  top: -48px;
+  left: 0;
+  right: 0;
+  margin: 0px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.default-navs.owl-theme .owl-nav [class*=owl-] {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 50%;
+  margin: 0px;
+  border: 1.2px solid rgba(22, 23, 26, .1);
+  color: #727272;
+  background: var(--white-color);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  text-align: center
+}
+
+.default-navs.owl-theme:not(.home-slider) .owl-nav [class*=owl-]:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--white-color)
+}
+
+/* ------------  Start:-Funfact Section   ------------*/
+.funfact-overlay {
+  position: relative;
+  background-color: var(--primary-color);
+  padding: 50px 30px;
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
+  z-index: 0;
+}
+
+.funfact-overlay:after {
+  content: '';
+  background-color: var(--primary-color);
+  opacity: .6;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: background .3s, border-radius .3s, opacity .3s;
+}
+
+.count-box {
+  width: 165px;
+  height: 165px;
+  position: relative;
+  padding: 45px 30px;
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: #fff4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.count-box .value {
+  font-size: 32px;
+  color: var(--primary-color);
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.count-box .count-title {
+  font-size: 16px;
+  line-height: 1;
+  color: var(--text-color);
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+/* ------------  End:-Funfact Section   ------------*/
+
+.ast_raho-ketu-text {
+  padding: 0 20px;
+}
+
+.ast_raho-ketu-text .horoscope-title {
+  font-size: 42px;
+  color: var(--heading-color);
+  line-height: 48px;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.horoscope-subtitle {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #454545;
+}
+
+.ast_raho-ketu-text .horoscope-star i.fa {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.ast_raho-ketu-text .horoscope-star span {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-left: 6px;
+  display: inline-block;
+  color: var(--primary-color);
+}
+
+.ast_report_benefit .ast_report_benefit_title {
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-weight: 800;
+  color: var(--heading-color);
+}
+
+.ast_raho-ketu-text p:last-child {
+  margin-bottom: 0;
+}
+
+.horoscope_reports-item {
+  position: relative;
+  border-radius: 20px;
+  padding: 22px;
+  background-color: var(--white-color);
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+}
+
+.horoscope_reports-item .horoscope_reports-img {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.ast_raho-ketu-img:hover:after {
+  height: 250%;
+  transition: all 600ms linear;
+  background-color: transparent;
+}
+
+.horoscope_reports-item .horoscope_reports-content {
+  padding: 20px 0 0 0;
+}
+
+.ast_panchang_calendar {
+  padding: 24px 30px;
+  border-radius: 12px;
+}
+
+.ast_panchang_calendar .ast_panchang_title_box {
+  text-align: center;
+}
+
+.ast_festival_month_contact {
+  padding: 20px 0 0 0;
+}
+
+.ast_festival_month_contact .ast_festi_month {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.ast_festival_month_contact .ast_festi_list .ast_festi_list-item {
+  position: relative;
+  padding: 10px 0px 10px 80px;
+  margin-bottom: 10px;
+}
+
+.ast_festival_month_contact .ast_festi_list .ast_festi_list-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ast_festival_month_contact .ast_festi_list .ast_festi_list-item .img-box {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  margin-right: 12px;
+}
+
+.ast_festival_month_contact .ast_festi_list .ast_festi_list-item .img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.ast_festival_month_contact .text-box .ast_festi_title .title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 3px;
+  color: var(--heading-color);
+}
+
+.ast_festival_month_contact .text-box .ast_festi_title .subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 3px;
+  color: var(--text-color);
+}
+
+.ast_chart_img {
+  text-align: center;
+}
+
+.ast_chart_img img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+/* -------- Start:- Breadcrumb-section   ------------*/
+.breadcrumb-area {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  height: auto;
+  display: block;
+  padding: 60px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.breadcrumb-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 140px 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.breadcrumb-list {
+  flex-shrink: 0;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.breadcrumb-list li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  word-break: break-word;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.breadcrumb-list li a {
+  color: var(--black-color);
+  -webkit-transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.breadcrumb-list li+li {
+  margin-left: 10px;
+  max-width: 250px;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 40px;
+  text-overflow: ellipsis;
+}
+
+.breadcrumb-list li+li::before {
+  content: "";
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  background-image: url(../images/general/earth.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  line-height: 1;
+}
+
+.breadcrumb-heading h2 {
+  color: var(--black-color);
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 800;
+  max-width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* -------- End:- Breadcrumb-section   ------------*/
+
+/* --------  Start:- Product Detail  --------*/
+.product_detail_content {
+  position: relative;
+  padding: 0 0 0 20px;
+}
+
+.ast_product_detail_item {
+  height: auto;
+}
+
+.product_detail_content .detail_title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.product_detail_content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 5px;
+  color: #454545;
+}
+
+.product_detail_content .rating-icon i {
+  font-size: 16px;
+  display: inline-block;
+  color: #ffb800;
+  margin-bottom: 10px;
+}
+
+.product_detail_content .price_box {
+  margin-bottom: 10px;
+}
+
+.product_detail_content .price_box .current_price {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #0a0a0a;
+  margin-right: 6px;
+}
+
+.product_detail_content .price_box .old_price {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: line-through;
+  line-height: 1.2;
+  color: #454545;
+}
+
+.quantity-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 8px;
+  color: var(--black-color);
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.quantity .quantity_add_btn,
+.quantity .quantity_subtract_btn {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  background-color: #fff3d6;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.quantity-count {
+  position: relative;
+  padding: 0 24px;
+  line-height: 40px;
+  margin: 0 10px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+}
+
+.quantity-count p {
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: var(--black-color);
+}
+
+.product_detail_content .astro_btn {
+  padding: 18px 50px;
+  margin-bottom: 20px;
+}
+
+.icon_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon_wrapper .icon-corn {
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #fff1cc;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.icon_wrapper .icon-content h5 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--black-color);
+  margin-bottom: 0;
+}
+
+/*  ------- Start:- 404 Section  ------- */
+.section-404 {
+  background-color: #fff9e9;
+}
+
+.ast_card-404 {
+  position: relative;
+  text-align: center;
+}
+
+.ast_card-404 .ast_error {
+  font-size: 105px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: 40px;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.ast_card-404 .ast_404-title {
+  font-size: 320px;
+  line-height: 240px;
+  font-weight: 900;
+  margin-bottom: 24px;
+  color: var(--primary-color);
+}
+
+.ast_card-404 h4 {
+  font-size: 60px;
+  font-weight: 700;
+  color: 000000;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.img-404 {
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+
+/* --------- Start:- Checkout Section --------- */
+
+.Checkout-form-box {
+  margin-bottom: 24px;
+}
+
+.checkout-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 15px;
+}
+
+.checkout-page__input-box {
+  position: relative;
+  text-align: center;
+  line-height: 1;
+  margin: 0 0 20px;
+}
+
+.wc-block-components-sidebar-layout .wc-block-components-form .wc-block-components-text-input input[type=text],
+.wc-block-components-sidebar-layout .wc-block-components-form .wc-block-components-text-input input[type="email"],
+.wc-block-components-sidebar-layout .wc-block-components-text-input input[type=text],
+.woocommerce-EditAccountForm input.woocommerce-Input,
+.woocommerce-form-login input.woocommerce-Input,
+.woocommerce-address-fields select.country_to_state,
+.woocommerce-address-fields input.input-text,
+.wc-block-components-sidebar-layout .wc-block-components-form .wc-block-components-text-input input[type="tel"] {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: var(--primary-lite-01);
+  border: 1px solid var(--primary-color);
+  outline: none;
+  font-size: 16px;
+  color: var(--gray-color);
+  display: block;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.woocommerce-input-wrapper .select2-container--default .select2-selection--single,
+.wc-blocks-components-select .wc-blocks-components-select__container {
+  position: relative;
+  width: 100%;
+  background: var(--primary-lite-01) !important;
+  border: 1px solid var(--primary-color) !important;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  height: auto;
+  color: var(--gray-color);
+  display: block;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.checkout-page__input-box .checkout-page__radio-box {
+  margin-bottom: 20px;
+  line-height: 60px;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.checkout-page__input-box .checkout-page__radio-box input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  box-shadow: none;
+  border-width: 2px;
+  border-color: #fff;
+  outline: 2px solid #dadada;
+  ;
+  position: absolute;
+  margin: 0;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkout-page__input-box .checkout-page__radio-box .form-check-input:checked[type=radio] {
+  background: var(--primary-color);
+  border-color: #fff;
+  outline-color: var(--primary-color);
+}
+
+.checkout-page__input-box button {
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: none;
+  outline: none;
+  padding: 18px 25px;
+}
+
+.checkout-table-box {
+  position: relative;
+  background-color: var(--white-color);
+  padding: 24px 30px 20px 40px;
+  border-radius: 12px;
+}
+
+.checkout-page__order-table {
+  position: relative;
+  width: 100%;
+  border: none;
+  margin: 0 0 0;
+}
+
+.checkout-page__order-table tbody tr td {
+  font-size: 18px;
+  color: var(--black-color);
+  font-weight: 500;
+  margin: 0;
+  padding: 0 0 19px 15px;
+  border: none;
+}
+
+.checkout-page__order-table tbody tr td.wc-block-cart-item__image {
+  padding-left: 0px;
+}
+
+.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__image a,
+.wc-block-components-order-summary .wc-block-components-order-summary-item__image {
+  width: 100px !important;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 12px;
+  padding: 0px !important;
+  display: inline-block;
+  background-color: #fff9e9;
+}
+
+.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__image img,
+.wc-block-components-order-summary .wc-block-components-order-summary-item__image img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.checkout-page__order-table tbody tr .pro__price {
+  text-align: right;
+}
+
+.checkout-table-box .checkout-page__input-box input[type="text"] {
+  background-color: #fff9e9;
+  padding-right: 120px;
+  height: 70px;
+  box-shadow: none;
+}
+
+.checkout-table-box .checkout-page__input-box .astro_btn {
+  position: absolute;
+  width: auto;
+  right: 10px;
+  top: 7px;
+  box-shadow: none;
+}
+
+.wc-block-components-order-summary .wc-block-components-order-summary-item {
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.is-large .wp-block-woocommerce-checkout-order-summary-block {
+  border: 1px solid var(--primary-color) !important;
+}
+
+/*  --------- Start:- Cart Page --------- */
+.wc-block-components-sidebar-layout {
+  border: 1px solid var(--primary-color);
+  border-radius: 1.2rem;
+}
+
+.wp-block-woocommerce-checkout .wc-block-components-sidebar-layout {
+  padding: 20px;
+}
+
+.wc-block-components-sidebar-layout .wc-block-components-main {
+  border-top: none;
+  width: 100% !important;
+  padding-right: 0% !important;
+}
+
+.wc-block-components-sidebar-layout .wc-block-components-sidebar {
+  width: 100% !important;
+  padding-left: 0px !important;
+}
+
+.wp-block-woocommerce-cart-line-items-block {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-collapse: collapse;
+  border-radius: 1.2em 1.2rem 0 0;
+  margin: 0;
+}
+
+table.wp-block-woocommerce-cart-line-items-block thead th,
+table.wishlist_table thead tr th {
+  font-weight: 600;
+  padding: 10px 12px !important;
+  background: var(--primary-color) !important;
+  color: var(--black-color);
+  line-height: 1.5em;
+  border-bottom: none;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+}
+
+table.wishlist_table thead tr th {
+  font-size: 16px;
+}
+
+table.wc-block-cart-items .wc-block-cart-items__header .wc-block-cart-items__header-product {
+  visibility: visible !important;
+}
+
+table.wp-block-woocommerce-cart-line-items-block tbody td {
+  font-weight: 600;
+  padding: 20px 16px !important;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  line-height: 1.5em;
+  border-bottom: none;
+  text-align: center;
+  font-size: 20px;
+  border-top: none !important;
+  border-bottom: 1px solid var(--primary-color);
+  vertical-align: baseline !important;
+}
+
+.cart-page__table__meta-title {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 700;
+  margin: 0;
+}
+
+.product-details__quantity .quantity {
+  justify-content: center;
+}
+
+.cart_totals .shop_table {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-collapse: collapse;
+  border-radius: 1.2em;
+}
+
+.cart_totals table.shop_table tbody td {
+  font-weight: 500;
+  padding: 10px 12px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  line-height: 1.5em;
+  border-bottom: none;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.cart_totals table.shop_table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.cart_totals table.shop_table tbody tr td.checkout-box {
+  padding: 12px 20px;
+  border-left: 2px solid var(--primary-color);
+  width: 50%;
+  text-align: right;
+  border-bottom: none;
+}
+
+table.wc-block-cart-items .wc-block-components-product-badge {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 .66em;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+table.wc-block-cart-items .wc-block-cart-item__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product-name,
+.wc-block-components-order-summary-item__description .wc-block-components-product-name {
+  font-size: 20px !important;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+table.wc-block-cart-items .wc-block-components-quantity-selector:after {
+  border: 1px solid #fff3d6;
+}
+
+table.wc-block-cart-items .wc-block-components-quantity-selector .wc-block-components-quantity-selector__button {
+  background: #fff3d6 !important;
+  color: var(--black-color);
+  font-weight: 600;
+}
+
+table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantity .wc-block-cart-item__remove-link {
+  color: #e50202 !important;
+}
+
+table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__total {
+  font-size: 22px !important;
+}
+
+.is-large.wc-block-cart .wc-block-cart__totals-title {
+  font-size: 22px !important;
+  font-weight: 600;
+  text-align: center !important;
+  text-transform: capitalize !important;
+  color: var(--heading-color);
+}
+
+.wc-block-components-sidebar .wc-block-components-totals-item__label {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--heading-color);
+}
+
+.wc-block-components-sidebar .wc-block-components-totals-wrapper,
+.wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-totals-block,
+.wc-block-components-sidebar .wc-block-components-totals-wrapper {
+  border-top: 1px solid var(--primary-color) !important;
+}
+
+.wc-block-cart .wc-block-cart__submit-container {
+  text-align: center;
+}
+
+.wc-block-components-sidebar .wc-block-cart__submit-button,
+.wc-block-components-sidebar .wc-block-components-panel__button,
+.woocommerce-form-login .woocommerce-form-login__submit,
+.woocommerce-MyAccount-content .woocommerce-Button,
+.woocommerce-info .button,
+.woocommerce-address-fields .button,
+.wc-block-components-sidebar-layout .wc-block-components-button {
+  position: relative;
+  border: none;
+  display: inline-block;
+  color: var(--heading-color);
+  padding: 18px 25px !important;
+  letter-spacing: 0.3px;
+  overflow: hidden;
+  margin: auto;
+  width: max-content;
+  background: var(--primary-color);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 0;
+  line-height: 20px;
+  box-shadow: none;
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+
+.woocommerce-form-login .woocommerce-form-login__submit,
+.woocommerce-info .button,
+.woocommerce-address-fields .button,
+.woocommerce-MyAccount-content .woocommerce-Button {
+  border-radius: 10px !important;
+  background-color: var(--primary-color) !important;
+  color: var(--heading-color) !important;
+}
+
+.wc-block-components-panel__button {
+  padding-top: 18px !important;
+}
+
+.wc-block-components-sidebar .wc-block-components-panel__button:active,
+.wc-block-components-sidebar .wc-block-components-panel__button:focus,
+.wc-block-components-sidebar .wc-block-components-panel__button:hover,
+.wc-block-components-sidebar .wc-block-cart__submit-button:focus,
+.wc-block-components-sidebar .wc-block-cart__submit-button:hover,
+.woocommerce-form-login .woocommerce-form-login__submit:focus,
+.woocommerce-form-login .woocommerce-form-login__submit:hover,
+.woocommerce-MyAccount-content .woocommerce-Button:focus,
+.woocommerce-MyAccount-content .woocommerce-Button:hover,
+.woocommerce-info .button:focus,
+.woocommerce-address-fields .button:focus,
+.woocommerce-info .button:hover,
+.woocommerce-address-fields .button:hover {
+  background: var(--secondary-color) !important;
+  color: var(--white-color) !important;
+}
+
+.woocommerce table.wishlist_table {
+  border: 1px solid var(--primary-color) !important;
+  border-collapse: collapse !important;
+}
+
+table.wishlist_table a.add_to_cart_button {
+  font-size: 14px !important;
+  display: block !important;
+  padding: 10px 20px;
+}
+
+.woocommerce table.shop_table.wishlist_table tr td {
+  border-color: var(--primary-color) !important;
+}
+
+.wc-block-components-sidebar .wc-block-components-panel__button:hover {
+  padding-left: 25px !important;
+}
+
+.wc-block-components-sidebar .wc-block-cart__submit-button {
+  transition: 0.5s all ease !important;
+}
+
+/* -------- Start:- Back To Top Button   ------------*/
+button.back-to-top {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: var(--white-color);
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  color: transparent;
+  clear: both;
+  visibility: hidden;
+  position: fixed;
+  cursor: pointer;
+  display: block;
+  color: var(--primary-color);
+  border: none;
+  right: 50px;
+  bottom: 75px;
+  font-size: 0px;
+  outline: 0 !important;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button.back-to-top:hover,
+button.back-to-top:active,
+button.back-to-top:focus {
+  outline: 0 !important;
+}
+
+button.back-to-top.show {
+  display: block;
+  background: var(--white-color);
+  right: 25px;
+  font-size: 20px;
+  bottom: 50px;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  visibility: visible;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+button.back-to-top.show:active {
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* -------- Start:- Special Service   ------------*/
+.service-inner-box {
+  position: relative;
+  background-color: var(--primary-lite-01);
+  border-radius: 0px;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0px 0px 6px #ccc;
+}
+
+.asto-special {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.asto-special a {
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.service-inner-box img {
+  padding-top: 0px;
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.asto-special img {
+  width: 100%;
+  padding-top: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.service-inner-box p {
+  color: #333;
+  padding: 15px;
+  margin-bottom: 0px;
+  line-height: 1.2;
+}
+
+.service-inner-box:hover img,
+.service-inner-box:focus-within img {
+  transform: scale(1.1);
+}
+
+/* -------- End:- Special Service   ------------*/
+
+/*  -------- Start:Form Preloader   ------------*/
+.AstroAPI-loader-body {
+  display: none;
+  position: relative;
+  z-index: 1000;
+}
+
+.AstroAPI-loader-body-inner {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: auto 75px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.loader-1 .loader-outter {
+  position: absolute;
+  border: 4px solid var(--primary-color);
+  border-left-color: transparent;
+  border-bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite;
+  animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite;
+}
+
+.loader-1 .loader-inner {
+  position: absolute;
+  border: 4px solid var(--white-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  border-right: 0;
+  border-top-color: transparent;
+  -webkit-animation: loader-1-inner 1s cubic-bezier(.42, .61, .58, .41) infinite;
+  animation: loader-1-inner 1s cubic-bezier(.42, .61, .58, .41) infinite;
+}
+
+
+/* --------------- Start: Woocommerce Part  ------------ */
+
+.woocommerce ul.products {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y)* -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.woocommerce ul.products:before {
+  display: none;
+}
+
+.products>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+/*.woocommerce .product-single .product-action a.added_to_cart{
+  display: none;
+}*/
+#product-content .woocommerce-ordering .orderby {
+  background: #fdfdfd;
+  border: 1px solid var(--primary-color);
+  border-radius: 2px;
+  color: #686868;
+  padding: 0.625em 0.4375em;
+  width: 100%;
+}
+
+.columns-4 .product-action .button,
+.columns-4 .product-action .add_to_wishlist,
+.columns-4 .product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse,
+.columns-4 .product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button,
+.columns-4 .product-action .compare-button a.compare,
+.col-lg-8 .columns-3 .product-action .button,
+.col-lg-8 .columns-3 .product-action .add_to_wishlist,
+.col-lg-8 .columns-3 .product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse,
+.col-lg-8 .columns-3 .product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button,
+.col-lg-8 .columns-3 .product-action .compare-button a.compare {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.columns-4 .product-action .compare-button a.compare:after,
+.col-lg-8 .columns-3 .product-action .compare-button a.compare:after {
+  font-size: 14px;
+}
+
+.columns-4 .product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse span i,
+.columns-4 .product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse span svg,
+.columns-4 .product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button span i,
+.columns-4 .product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button span svg,
+.col-lg-8 .columns-3 .product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse span i,
+.col-lg-8 .columns-3 .product-action .yith-wcwl-add-button .yith-wcwl-wishlistaddedbrowse span svg,
+.col-lg-8 .columns-3 .product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button span i,
+.col-lg-8 .columns-3 .product-action .yith-wcwl-add-button .yith-wcwl-add-to-wishlist-button span svg {
+  width: 14px;
+  height: 14px;
+  font-size: 14px !important;
+}
+
+.columns-4 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.add_to_cart_button,
+.columns-4 .product-action .add_to_cart_button,
+.col-lg-8 .columns-3 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.add_to_cart_button,
+.col-lg-8 .columns-3 .product-action .add_to_cart_button {
+  width: auto;
+  height: auto;
+  line-height: 1.2;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.columns-4 .product-single .product-img .sale-ribbon,
+.col-lg-8 .columns-3 .product-single .product-img .sale-ribbon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+
+.columns-4 .product-single .product-content-outer h3,
+.col-lg-8 .columns-3 .product-single .product-content-outer h3 {
+  font-size: 16px;
+}
+
+.columns-4 .product-single .product-content-outer .amount,
+.col-lg-8 .columns-3 .product-single .product-content-outer .amount {
+  font-size: 14px;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button,
+.columns-4 .product-action .compare-button a.compare {
+  padding: 0px;
+  margin: 0px;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.add_to_cart_button,
+.product-action .add_to_cart_button,
+.woocommerce div.product form.cart .single_add_to_cart_button,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button {
+  position: relative;
+  padding: 14px 30px;
+  margin: 0 10px;
+  width: auto;
+  height: auto;
+  line-height: 1.2;
+  border-radius: 10px;
+  overflow: hidden;
+  color: var(--black-color);
+  background-color: var(--primary-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  z-index: 0;
+  line-height: 20px;
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+
+.woocommerce .product-single .product-action a.added_to_cart {
+  position: relative;
+  padding: 10px 16px;
+  margin: 0 5px;
+  width: fit-content;
+  height: auto;
+  line-height: 1.2;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 600;
+  z-index: 0;
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+
+.woocommerce div.product form.cart .single_add_to_cart_button:hover,
+.woocommerce div.product form.cart .single_add_to_cart_button:focus,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit:hover,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit:focus,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:hover,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:focus {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}

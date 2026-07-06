@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 120" width="100%" height="100%">
+  <defs>
+    <!-- Gold Gradient -->
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe17d" />
+      <stop offset="50%" stop-color="#fdc533" />
+      <stop offset="100%" stop-color="#d49a17" />
+    </linearGradient>
+    
+    <!-- Navy Gradient -->
+    <linearGradient id="navy-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#143154" />
+      <stop offset="100%" stop-color="#0B2038" />
+    </linearGradient>
+
+    <!-- Subtle Shadow -->
+    <filter id="subtle-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Logo Icon (X: 10 to 110, Y: 10 to 110) -->
+  <g transform="translate(10, 10)">
+    <!-- Midnight Sky Circular Backdrop -->
+    <circle cx="50" cy="50" r="45" fill="url(#navy-gradient)" filter="url(#subtle-shadow)" />
+    
+    <!-- Outer constellations / orbit rings -->
+    <circle cx="50" cy="50" r="48" fill="none" stroke="url(#gold-gradient)" stroke-width="0.75" stroke-dasharray="4, 4" opacity="0.7" />
+
+    <!-- Kundli Square -->
+    <rect x="20" y="20" width="60" height="60" fill="none" stroke="url(#gold-gradient)" stroke-width="1.5" stroke-linejoin="round" />
+    
+    <!-- Kundli Diamond (connecting midpoints of the square) -->
+    <polygon points="50,20 80,50 50,80 20,50" fill="none" stroke="url(#gold-gradient)" stroke-width="1.25" stroke-linejoin="round" />
+    
+    <!-- Kundli Diagonals -->
+    <line x1="20" y1="20" x2="80" y2="80" stroke="url(#gold-gradient)" stroke-width="0.75" opacity="0.8" />
+    <line x1="20" y1="80" x2="80" y2="20" stroke="url(#gold-gradient)" stroke-width="0.75" opacity="0.8" />
+
+    <!-- Central Glowing 8-Pointed Star -->
+    <g transform="translate(50, 50)" fill="url(#gold-gradient)">
+      <!-- Vertical/Horizontal Star rays -->
+      <path d="M0,-8 L2,-2 L8,0 L2,2 L0,8 L-2,2 L-8,0 L-2,-2 Z" />
+      <!-- Diagonal Star rays -->
+      <path d="M0,-8 L2,-2 L8,0 L2,2 L0,8 L-2,2 L-8,0 L-2,-2 Z" transform="rotate(45)" opacity="0.8" />
+      <!-- Core star glow -->
+      <circle cx="0" cy="0" r="1.5" fill="#fff" />
+    </g>
+
+    <!-- Star Nodes (Numerology points at coordinates) -->
+    <circle cx="20" cy="20" r="2" fill="url(#gold-gradient)" />
+    <circle cx="80" cy="20" r="2" fill="url(#gold-gradient)" />
+    <circle cx="20" cy="80" r="2" fill="url(#gold-gradient)" />
+    <circle cx="80" cy="80" r="2" fill="url(#gold-gradient)" />
+    <circle cx="50" cy="20" r="2" fill="#fff" />
+    <circle cx="80" cy="50" r="2" fill="#fff" />
+    <circle cx="50" cy="80" r="2" fill="#fff" />
+    <circle cx="20" cy="50" r="2" fill="#fff" />
+  </g>
+
+  <!-- Typography Group (X: 130 onwards, Y: 10 to 110) -->
+  <g transform="translate(130, 0)">
+    <!-- Brand Title -->
+    <text x="0" y="66" font-family="'Outfit', sans-serif" font-size="44" font-weight="800" fill="#0B2038" letter-spacing="-0.5">
+      Astro<tspan fill="url(#gold-gradient)" font-weight="600">Vyapak</tspan>
+    </text>
+    
+    <!-- Divider Line -->
+    <line x1="0" y1="80" x2="390" y2="80" stroke="url(#gold-gradient)" stroke-width="2" stroke-linecap="round" />
+    <circle cx="390" cy="80" r="3" fill="#0B2038" />
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="100" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#4a5d73" letter-spacing="2.2" text-transform="uppercase">
+      Unveiling Destiny Through Stars &amp; Numbers
+    </text>
+  </g>
+</svg>

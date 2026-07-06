@@ -1,0 +1,933 @@
+@media (min-width: 992px){
+
+	.navbar-expand-lg .ast_primary-menu .navbar-nav .nav-link {
+		padding-right: 0rem;
+		padding-left: 0rem;
+	}
+	.ast_header_wrapper .main-menu ul li.menu-item-has-children .nav-link{
+		padding-right: 15px;
+	}
+	.ast_header_wrapper .main-menu ul li.menu-item-has-children .nav-link:after{
+		position: absolute;
+		content: '\f107';
+		font-family: FontAwesome;
+		font-size: 16px;
+		display: inline-block;
+		right: 0;
+	}
+	.header-02{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	.ast_header_wrapper .main-menu ul li .dropdown-menu {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 260px;
+		border: none;
+		display: block;
+		border-radius: 0px;
+		padding: 0px 0px;
+		background-color: var(--white-color);
+		box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+		z-index: 99;
+		transition: 0.4s all;
+		transform: scaleY(0);
+		-webkit-transform: scaleY(0);
+		transform-origin: center top 0;
+		-webkit-transform-origin: center top 0;
+		transition: all 0.3s ease-in-out 0s;
+		-webkit-transition: all 0.3s ease-in-out 0s;
+	}
+	.ast_astro-slider-form .astro_boxes,
+	.ast_kundli-section #service-kundli .astro_box .astro_boxes,
+	.ast_astro-slider-form #rudraksh_res_data .sde_sati_group,
+	.ast_astro-slider-form #today_img_chart .parentDiv-popup,
+	.ast_astro-slider-form #hora_data.ast__popup-show .astro_box_grid,
+	.ast_astro-slider-form #choghadiya_data .astro_box_grid,
+	.ast_astro-slider-form #vedicastro-panchang.panchang_group.ast__popup-show,
+	.ast_astro-slider-form #retro-planites .choose_services_row,
+	.ast_astro-slider-form #numerology-data .numberlogy_grid,
+	.ast_astro-slider-form #sade_sati_res_data .sde_sati_group,
+	.ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner
+	{
+		max-width:950px;
+	}
+	.ast__astrocare-horoscope-form .zodic_data,
+	.ast_kundli-matching-section .maching_main_tab_all_chart{
+		max-width:0px;
+	}
+	.ast__astrocare-horoscope-form .zodic_data.zodic_data_show,
+	.ast_kundli-matching-section .maching_main_tab_all_chart.ast__popup-show{
+		max-width:950px;
+	}
+	.ast__astrocare-horoscope-form .multi_lang{
+		position: absolute;
+		right: 345px;
+		top: 85px;
+	}
+	.ast_kundli-matching-section .panchang_sec .choose_services_box .multi_lang {
+		position: absolute;
+		right: 350px;
+		top: 80px;
+	}
+	.ast_pooja-booking-section .amelia-v2-booking #amelia-container.am-fc__wrapper .am-fcl__item,
+	.ast_pooja-booking-section .amelia-v2-booking #amelia-container .am-fcil__item{
+		max-width: 33%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1439px) {
+	.main-content .ast_sub_title{
+		font-size: 18px;
+	}
+	.main-content .ast_title{
+		font-size: 55px;
+	}
+	.ast_searchbox_section{
+		padding-top: 80px;
+	}
+	.ast_search_box{
+		margin-top: 0px;
+	}
+	.ast_team_item .ast_team_img{
+		width: 170px;
+		height: 170px;
+	}
+	.ast_mobile_section .ast_mobile-view-content .ast_app_title{
+		font-size: 50px;
+	}
+	.hs_waves2{
+		width: 350px;
+		height:350px;
+	}
+	.ast_team_detail .ast_team_img img{
+		width: 330px;
+		height: 330px;
+	}
+	.astro-main-slider:after{
+		width: 490px;
+		height: 490px;
+	}
+	.ast_product_slider:not(.home-slider) .owl-nav button.owl-prev, 
+	.ast_product_slider:not(.home-slider) .owl-nav button.owl-next{
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.ast_product_slider  .owl-nav button.owl-prev{
+		left: -50px;
+	}
+	.ast_product_slider  .owl-nav button.owl-next{
+		right: -50px;
+	}
+	.clients-section .title-outer .title:after,
+	.clients-section .title-outer .title:before{
+		width: 280px;
+	}
+	.ast_Kundali_matching .tabs{
+		padding: 0px 20px;
+	}
+	.ast_testimonials-card__info__left{
+		padding-right: 30px;
+	}
+	.ast_testimonials-card__name{
+		font-size: 20px;
+	}
+	.ast_contact-box{
+		padding: 25px 15px;
+	}
+	.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab{
+		width: 210px !important;
+	}
+	.ast_astro-slider-form .error, .ast__astrocare-horoscope-form .error,
+	.ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner{
+		font-size: 28px;
+	}
+	.ast__astrocare-horoscope-form .multi_lang{
+		right: 50px;
+	}
+	.breadcrumb-heading h2{
+		max-width: 315px;
+		font-size: 30px;
+	}
+	.ast_pooja-booking-section .amelia-v2-booking #amelia-container.am-fc__wrapper .am-fcl__item-name, .ast_pooja-booking-section .amelia-v2-booking #amelia-container .am-fcil__item-name{
+		font-size: 20px;
+	}
+	.pooja-item .horoscope_reports-content .ast_price, .ast_pooja-booking-section .amelia-v2-booking #amelia-container .am-fcil__item-cost>span{
+		font-size: 16px;
+	}
+	.ast_blog_item .ast_blog_content .ast_blog_title{
+		font-size: 18px;
+	}
+	.ast_blog_item{
+		padding: 15px;
+	}
+	.ast_blog_post a{
+		padding: 10px 0;
+		font-size: 14px;
+	}
+	.ast_blog_post a i{
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		margin-right: 5px;
+	}
+	.ast_blog_item .ast_blog_content .ast_blog_btn .astro_btn{
+		padding: 10px 20px;
+	}
+}
+
+@media (max-width: 992px){
+	.ast_header_wrapper .ast_navbar_wraper .ast_logo{
+		display: block;
+	}
+	.ast_header_wrapper .ast_navbar_wraper .ast_logo a:hover,
+	.ast_header_wrapper .ast_navbar_wraper .ast_logo a:focus{
+		outline: 1px dotted var(--primary-color);
+		outline-offset:-3px;
+	}
+	.ast_header_wrapper .navbar-close, .ast_header_wrapper .navbar-toggler {
+		display: block;
+	}
+	.ast_header_wrapper .nav-menu {
+		text-align: left;
+		background-color: var(--white-color);
+		position: fixed;
+		right: -350px;
+		top: 0;
+		z-index: 9999;
+		width: 100%;
+		height: 100%;
+		max-width: 320px;
+		-webkit-transition-duration: 600ms;
+		transition-duration: 600ms;
+		padding: 0;
+		-webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+		display: block;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		padding-top: 60px;
+		margin: auto;
+		transition: all 0.5s;
+	}
+	.ast_header_wrapper .nav-menu .main-menu ul li:first-child{
+		border-top: 1px solid #ffecdc;
+	}
+	.ast_header_wrapper .nav-menu .main-menu ul li {
+		display: block;
+		margin: 0;
+		padding: 0px;
+		border-bottom: 1px solid #ffecdc;
+	}
+	.ast_header_wrapper .nav-menu .main-menu ul li a {
+		display: block;
+		border-radius: 0px;
+		color: var(--heading-color);
+		padding: 12px 24px;
+	}
+	.ast_header_wrapper .nav-menu .main-menu ul li a:hover,
+	.ast_header_wrapper .nav-menu .main-menu ul li a:focus{
+		background-color: var(--primary-color);
+		color: var(--white-color);
+	}
+	.ast_header_wrapper .nav-menu .main-menu ul li.active .dropdown-menu {
+		border-top: 1px solid #ececec;
+	}
+	.ast_header_wrapper .nav-menu .main-menu ul li .dropdown-menu {
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		border: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		background-color: transparent;
+		visibility: visible;
+		opacity: 1;
+		display: none;
+		-webkit-transition: none;
+		transition: none;
+	}
+	.ast_header_wrapper .nav-menu .main-menu ul li .dropdown-menu li a {
+		padding: 0px 20px 0 40px;
+		line-height: 45px !important;
+	}
+	.ast_header_wrapper .main-menu ul > li.menu-item-has-children > a:after,
+	.ast_header_wrapper .main-menu ul > li.menu-item-has-children > a:before{
+		display: none;
+	}
+	.ast_header_wrapper .nav-menu .main-menu ul li .mobile-collapsed {
+		display: block;
+	}
+	.body-overlay.active {
+		opacity: 1;
+		width: 100%;
+		visibility: visible;
+	}
+	.ast_searchbox_section{
+		padding-top: 60px;
+	}
+	.ast_search_box{
+		margin-top: 0px;
+	}
+	.astro-main-slider:after{
+		width: 430px;
+		height: 430px;
+	}
+	.astro-main-slider div.main-content {
+		margin-bottom: 0;
+		margin-top: 1rem;
+	}
+	.main-content .ast_sub_title{
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+	.main-content .ast_title{
+		font-size: 45px;
+		margin-bottom: 12px;
+	}
+	.main-content .ast_description{
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+	.main-content .ast_slider_btn{
+		margin-top: 20px;
+	}
+	.main-content .ast_sub_title .ast_slider_earth{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+	}
+	.main-content .ast_sub_title .ast_slider_earth img{
+		width: 18px;
+		height: 15px;
+	}
+	.ast_slider_btn .astro_btn{
+		padding: 14px 20px;
+		font-size: 14px;
+	}
+	.ast_free_Kundali .ast_form_box{
+		padding-right: 0px;
+	}
+	.ast_free_Kundali{
+		padding-bottom: 140px;
+	}
+	.ast_coman_detail{
+		padding-top: 20px;
+	}
+	.ast_rahu-ketu-box{
+		padding: 50px 25px;
+	}
+	.ast_card-404 .ast_error{
+		font-size: 80px;
+		letter-spacing: 15px;
+	}
+	.ast_card-404 .ast_404-title{
+		font-size: 200px;
+		line-height: 160px;
+		margin-bottom: 10px;
+	}
+	table.woocommerce-cart-form__contents thead th{
+		font-size: 16px;
+	}
+	table.woocommerce-cart-form__contents tbody td{
+		font-size: 16px;
+	}
+	.cart-page__table__meta-title{
+		font-size: 16px;
+		font-weight: 600;
+	}
+	.pro__image a{
+		width: 90px;
+		height: 90px;
+		padding: 12px;
+	}
+	.cart_totals table.shop_table tbody td{
+		font-size: 16px;
+	}
+	.ast_shape{
+		display: none;
+	}
+	.ast_about_content{
+		padding-top: 25px;
+	}
+	.ast_about_detail, .ast_about_img{
+		padding: 0px ;
+	}
+	.clients-section .title-outer .title:after,
+	.clients-section .title-outer .title:before{
+		width: 120px;
+	}
+	.spec-content{
+		margin-bottom: 25px;
+	}
+	.ast_Kundali_matching .tabs{
+		padding: 0px 10px;
+	}
+	.ast_astro-slider-form .astro_boxes, .ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner, .ast_astro-slider-form #rudraksh_res_data .sde_sati_group, .ast_astro-slider-form #sade_sati_res_data .sde_sati_group, .ast_astro-slider-form #hora_data .astro_box_grid, .ast_astro-slider-form #numerology-data .numberlogy_grid, .ast_astro-slider-form #retro-planites .choose_services_row, .ast_astro-slider-form #choghadiya_data .astro_box_grid,
+	.ast__astrocare-horoscope-form .zodic_data{
+		padding: 1.5rem !important;
+		max-height: 500px !important;
+	}
+	.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab{
+		width: 210px !important;
+	}
+	.ast_astro-slider-form .error, .ast__astrocare-horoscope-form .error,
+	.ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner{
+		font-size: 26px;
+	}
+	.breadcrumb-heading h2{
+		max-width: 315px;
+		font-size: 30px;
+	}
+	table.wp-block-woocommerce-cart-line-items-block tbody td{
+		padding: 10px 8px !important;
+		font-size: 16px !important;
+	}
+	.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__image a, 
+	.wc-block-components-order-summary .wc-block-components-order-summary-item__image{
+		width: 70px !important;
+		height: 70px;
+		min-width: 70px;
+		min-height: 70px;
+	}
+	table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product-name, 
+	.wc-block-components-order-summary-item__description .wc-block-components-product-name{
+		font-size: 16px !important;
+		margin-bottom: 0px !important;
+	}
+	table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__total{
+		font-size: 16px !important;
+	}
+	.wishlist_table.modern_grid li .item-details h3, .wishlist_table.images_grid li .item-details h3, .wishlist_table.mobile li .item-details h3{
+		font-size: 20px;
+	}
+	.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.add_to_cart_button, .product-action .add_to_cart_button{
+		padding: 10px 20px;
+		font-size: 14px;
+	}
+	.product-remove .remove_from_wishlist{
+		color: #e50202;
+	}
+}
+
+@media (max-width: 767px){
+	.astro_theme_titles{
+		margin-bottom: 20px;
+	}
+	.astro_theme_titles .theme_title{
+		padding: 10px 18px;
+		font-size: 16px;
+	}
+	.astro_theme_titles h5 img{
+		max-width: 25px;
+	}
+	.astro_theme_titles .theme_subtitle{
+		font-size: 24px;
+	}
+	.ast_form_call .astro_btn {
+		position: relative;
+		left: auto;
+		bottom: auto;
+	}
+	.ast_header_wrapper .ast_book_btn{
+		display: none;
+	}
+	.ast_header_wrapper .ast_navbar_wraper{
+		padding: 8px 0;
+	}
+	.ast_logo img{
+		max-width: 150px;
+	}
+	.astro-main-slider:after{
+		width: 300px;
+		height: 300px;
+	}
+	.main-content .ast_sub_title .ast_slider_earth img {
+		width: 12px;
+		height: 10px;
+	}
+	.main-content .ast_sub_title .ast_slider_earth {
+		width: 20px;
+		height: 20px;
+		margin-right: 5px;
+		line-height: 20px;
+	}
+	.main-content .ast_sub_title{
+		font-size: 14px;
+		padding:4px 10px 5px 6px;
+		margin-bottom: 8px;
+	}
+	.main-content .ast_title{
+		font-size: 26px;
+		letter-spacing: 0px;
+		margin-bottom: 8px;
+	}
+	.main-content .ast_description {
+		font-size: 14px;
+		max-width: 275px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin-bottom: 8px;
+	}
+	.main-content .ast_slider_btn {
+		margin-top: 5px;
+	}
+	.main-content .astro_btn{
+		font-size: 14px;
+		padding: 12px 20px;
+	}
+	.ast_search_box{
+		padding: 30px 22px;
+	} 
+	.ast_mobile_section .ast_mobile-view-content{
+		padding: 50px 0px 50px 0px;
+	}
+	.ast_mobile_section .ast_mobile-view-content .ast_app_title{
+		font-size: 40px;
+	}
+	.ast_free_Kundali{
+		padding: 25px 20px 114px 20px;
+	}
+	.ast_testimonials{
+		padding: 30px 22px;
+	}
+	.hs_waves2{
+		left: 0;
+		width: 350px;
+		height: 350px;
+	}
+	.ast_mobile_view_img .mobile_img{
+		width: 100%;
+	}
+	.ast_img_title{
+		width: 80px;
+		height: 80px;
+	}
+	.ast_img_title h4 a{
+		font-size: 18px;
+	}
+	.ast_Kundali_matching{
+		margin: 0 0px 20px;
+	}
+	.Kundali_matching_tab .nav-link{
+		padding: 10px 15px;
+		font-size: 14px;
+	}
+	.Kundali_matching_tab .nav-link img{
+		margin-right: 5px;
+		width: 24px;
+		height: 24px;
+	}
+	.hs_waves2 span.ring1{
+		left: -5%;
+	}
+	.hs_waves2 span.ring1 img{
+		width: 30px;
+		height: 30px;
+	}
+	.hs_waves2 span.ring4{
+		right:-5%;
+	}
+	.hs_waves2 span.ring4 img{
+		width: 32px;
+		height: 38px;
+	}
+	.breadcrumb-content{
+		padding: 12px 0;
+		background-image: none !important;
+	}
+	.breadcrumb-heading h2{
+		font-size: 28px;
+		color: var(--white-color);
+	}
+	.breadcrumb-list li{
+		color: var(--white-color);
+	}
+	.breadcrumb-list li a{
+		color: var(--white-color);
+	}
+	.ast_today_panchang .ast_pagination_link{
+		padding: 15px 10px;
+	}
+	.ast_panchang_title_box .ast_panchang_title{
+		font-size: 16px;
+	}
+	.ast_today_panchang .ast_pagination_link li .ast_prev, .ast_today_panchang .ast_pagination_link li .ast_next{
+		width: 36px;
+		height: 34px;
+		line-height: 34px;
+		font-size: 13px;
+	}
+	.ast_panchang_title_box .ast_panchang_title img{
+		width: 22px;
+		height: 22px;
+	}
+	.ast_panchang_table{
+		padding: 10px 0px;
+	}
+	.ast_festival_month_contact .ast_festi_list .ast_festi_list-item{
+		padding: 10px 0px 10px 60px;
+	}
+	.ast_festival_month_contact .ast_festi_list .ast_festi_list-item .img-box{
+		width: 50px;
+		height: 50px;
+	}
+	.ast_contact-wrapper{
+		padding: 30px 18px;
+	}
+	.astro_talk_wrapper .ast_title_box .ast_content_title{
+		font-size: 22px;
+	}
+	.ast_team_detail .ast_team_img img{
+		width: 100%;
+		height: 100%;
+	}
+	.ast_card-404 .ast_error{
+		font-size: 55px;
+		letter-spacing: 10px;
+	}
+	.ast_card-404 .ast_404-title{
+		font-size: 120px;
+		line-height: 80px
+	}
+	.ast_card-404 h4{
+		font-size: 34px;
+	}
+	.checkout-table-box{
+		padding: 22px;
+	}
+	.footer_top_right .ft_social_icon{
+		justify-content: start;
+	}
+	.ast_blog_detail .ast_blog_item .ast_blog_content{
+		padding: 18px;
+	}
+	.ast_blog_pagination{
+		padding: 30px 15px;
+	}
+	.ast_blog_pagination .ast_pagination_link li .ast_prev, .ast_blog_pagination .ast_pagination_link li .ast_next{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		margin-right: 5px;
+	}
+	.ast_blog_pagination .ast_pagination_link li span{
+		font-size: 14px;
+	}
+	.ast_blog_detail .ast_blog_item .ast_blog_content .ast_blog_title{
+		font-size: 24px;
+		line-height: 1.2;
+		margin: 10px 0 15px 0;
+	}
+	.spec-title{
+		font-size: 18px;
+	}
+	.spec-images .spac-list li + li {
+		margin-left: -20px;
+	}
+	.spec-images .spac-list li{
+		width: 75px;
+		height: 75px;
+	}
+	.ast_Kundali_matching .tabs{
+		overflow: auto;
+	}
+	.ast_Kundali_matching .tab{
+		height: 45px;
+		width: 185px;
+		min-width: 185px;
+		font-size: 14px;
+	}
+	.ast_Kundali_matching .glider{
+		width: 185px;
+		height: 45px;
+	}
+	.spac_number{
+		font-size: 16px;
+	}
+	.testimonial-3__wrapper-item-2{
+		padding: 25px 25px 25px 25px;
+	}
+	.ast_testimonials-card{
+		padding: 40px 40px 34px 20px;
+	}
+	.ast_testimonials-card__text{
+		padding-right: 0px;
+		font-size: 16px;
+	}
+	.ast_testimonials-card__info__left{
+		padding-right: 30px;
+	}
+	.ast_testimonials-card__name{
+		font-size: 16px;
+	}
+	.ast_testimonials-card__designation{
+		font-size: 14px;
+	}
+	.ast_testimonials-card__rattings{
+		margin-left: 15px;
+	}
+	.ast-nav-section .owl-theme .owl-nav{
+		margin-top: 25px;
+	}
+	.astro_btn{
+		padding: 14px 20px;
+	}
+	.call_icon{
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.call_icon img{
+		width: 20px;
+		height: 20px;
+	}
+	.call_number h5{
+		font-size: 14px;
+	}
+	.astro_experience{
+		padding-left: 90px;
+	}
+	.astro_experience .astro_experience_year{
+		padding: 10px 20px;
+	}
+	.astro_experience .astro_experience_year h4{
+		font-size: 40px;
+	}
+	.astro_experience .astro_experience_text{
+		padding: 18px 20px;
+	}
+	.astro_experience .astro_experience_text p{
+		font-size: 20px;
+	}
+	.ast_astro-slider-form .astro_boxes, .ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner, .ast_astro-slider-form #rudraksh_res_data .sde_sati_group, .ast_astro-slider-form #sade_sati_res_data .sde_sati_group, .ast_astro-slider-form #hora_data .astro_box_grid, .ast_astro-slider-form #numerology-data .numberlogy_grid, .ast_astro-slider-form #retro-planites .choose_services_row, .ast_astro-slider-form #choghadiya_data .astro_box_grid, .ast__astrocare-horoscope-form .zodic_data{
+		padding: 1rem !important;
+		max-height: 390px !important;
+	}
+	.ast__astrocare-horoscope-form .choose_services_box .zodic_sign .choose_services_row .zodics_sign_tab{
+		width: 290px !important;
+	}
+	.ast_astro-slider-form .error, .ast__astrocare-horoscope-form .error,
+	.ast_astro-slider-form .ast_vedicastro_popup .ast_vedicastro_popup_inner{
+		font-size: 18px;
+	}
+	.comments-area{
+		padding: 20px;
+	}
+	.comment-meta{
+		flex-wrap: wrap;
+	}
+	.comment-metadata a.comment-edit-link{
+		margin-left: 0px;
+	}
+	.ast_pooja-booking-section .amelia-v2-booking #amelia-container .am-fcis__header-name{
+		font-size: 22px;
+		margin-bottom: 12px;
+	}
+	div#kundli-lagan-chart svg{
+		position: relative;
+	}
+	#service-kundli .astro_box_row:first-child, #sade-sati-kundli .astro_box:first-child{
+		display: none;
+	}
+	#today_img_chart svg{
+		position: relative;
+		transform: scale(0.5) translatex(-100%) !important;
+		margin-top: 0px !important;
+	}
+	.ast_kundli-section .ast_free_Kundali #service-kundli .astro_box_row .astro_grid{
+	    padding-left: 10px !important;
+	    padding-right: 10px !important;
+	}
+	.ast__astrocare-horoscope-form #predictions_data .choose_services_box .astro_box,
+	.ast_kundli-matching-section #service-matching .choose_services_box .astro_box{
+	    justify-content: center !important;
+	}
+}
+
+@media (max-width: 380px){
+	.astro-main-slider div.main-content{
+		margin-top: 0px;
+	}
+	.main-content .ast_title{
+		font-size: 20px;
+	}
+	.main-content .astro_btn {
+		font-size: 12px;
+		padding: 8px 20px;
+	}
+	.hs_waves2{
+		width: 260px;
+		height: 260px;
+	}
+	.ast_blog_post a{
+		font-size: 12px;
+	}
+	.ast_blog_post a i{
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+	}
+	.Kundali_matching_tab .nav-link{
+		padding: 10px 15px;
+		font-size: 10px;
+	}
+	.Kundali_matching_tab .nav-link img{
+		margin-right: 5px;
+		width: 20px;
+		height: 20px;
+	}
+	.ast_img_title{
+		width: 60px;
+		height: 60px;
+	}
+	.ast_img_title h4 a{
+		font-size: 15px;
+	}
+	.hs_waves2 span.ring2 img {
+		width: 29px;
+		height: 28px;
+	}
+	.hs_waves2 span.ring3 img {
+		width: 21px;
+		height: 20px;
+	}
+	.hs_waves2 span.ring5 img{
+		width: 30px;
+		height: 29px;
+	}
+	.hs_waves2 span.ring6 img{
+		width: 24px;
+		height: 22px;
+	}
+	.hs_waves2 span.ring8 img{
+		width: 30px;
+		height: 30px;
+	}
+	.ast_blog_pagination .ast_pagination_link li span{
+		font-size: 12px;
+	}
+	.spec-title{
+		font-size: 15px;
+	}
+	.spec-images .spac-list li + li {
+		margin-left: -10px;
+	}
+	.spec-images .spac-list li{
+		width: 50px;
+		height: 50px;
+	}
+	.spac_number{
+		font-size: 14px;
+	}
+	.comment-body {
+		margin-left: 50px;
+	}
+	.comments-area .children .comment .comment-body{
+		margin-right: 50px;
+	}
+	.comment-author .avatar{
+		width: 45px;
+		height: 45px;
+		left: -65px;
+	}
+	.comments-area .comment .children .comment-meta .comment-author .avatar {
+		right: -65px;
+	}
+	.breadcrumb-heading h2{
+		font-size: 22px;
+		max-width: 280px;
+	}
+	.breadcrumb-list li{
+		font-size: 15px;
+	}
+	.breadcrumb-list li + li{
+		margin-left: 5px;
+		padding-left: 35px;
+	}
+	.breadcrumb-list li + li::before{
+		width: 25px;
+		height: 20px;
+	}
+	table.wp-block-woocommerce-cart-line-items-block tbody td{
+		padding: 10px 8px !important;
+		font-size: 14px !important;
+	}
+	.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__image a, 
+	.wc-block-components-order-summary .wc-block-components-order-summary-item__image{
+		width: 50px !important;
+		height: 50px;
+		min-width: 50px;
+		min-height: 50px;
+	}
+	table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product-name, 
+	.wc-block-components-order-summary-item__description .wc-block-components-product-name{
+		font-size: 14px !important;
+		margin-bottom: 0px !important;
+	}
+	table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__total{
+		font-size: 14px !important;
+	}
+	.wc-block-components-sidebar .wc-block-cart__submit-button, .wc-block-components-sidebar .wc-block-components-panel__button, .woocommerce-form-login .woocommerce-form-login__submit, .woocommerce-MyAccount-content .woocommerce-Button, .woocommerce-info .button, .woocommerce-address-fields .button, .wc-block-components-sidebar-layout .wc-block-components-button{
+		padding: 10px 20px !important;
+		font-size: 14px !important;
+	}
+	.ast_blog_item{
+		padding: 15px;
+	}
+	.ast_blog_item .ast_blog_content .ast_blog_title{
+		font-size: 18px;
+	}
+	.ast_blog_item .ast_blog_content .ast_blog_btn .astro_btn{
+		padding: 10px 20px;
+	}
+	.kundli_vedic_login_form .kundli_vedic_group:last-child input[type="submit"] {
+        padding: 16px 22px !important;
+        font-size: 14px !important;
+    }
+    #service-kundli .astro_box_row:first-child, #sade-sati-kundli .astro_box:first-child{
+		display: none !important;
+	}
+}
+
+
+/*Woocommerce Part*/
+
+
+@media (min-width: 768px) {
+	.woocommerce  .products.columns-2>* {
+		flex: 0 0 auto;
+		width: 50%;
+	}
+	.woocommerce  .products.columns-3>* {
+		flex: 0 0 auto;
+		width: 50%;
+	}
+	.woocommerce  .products.columns-4>* {
+		flex: 0 0 auto;
+		width: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.woocommerce  .products.columns-2>* {
+		flex: 0 0 auto;
+		width: 50%;
+	}
+	.woocommerce  .products.columns-3>* {
+		flex: 0 0 auto;
+		width: 33.333333%;
+	}
+	.woocommerce  .products.columns-4>* {
+		flex: 0 0 auto;
+		width: 25%;
+	}
+}
